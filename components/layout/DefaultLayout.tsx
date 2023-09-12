@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 // import AppHeader from "@/shared/AppHeader";
 // import AppFooter from "@/shared/AppFooter";
 // import PagesMetaHead from "@/PagesMetaHead";
 
 interface DefaultLayoutProps {
-  children: ReactNode; // Define the children prop with ReactNode type
+  children: ReactNode;
 }
 
 export default function DefaultLayout({ children }: DefaultLayoutProps) {
@@ -11,7 +12,7 @@ export default function DefaultLayout({ children }: DefaultLayoutProps) {
     <>
       {/* <PagesMetaHead />
       <AppHeader /> */}
-      <div>{children}</div>
+      <div className="">{children}</div>
       {/* <AppFooter /> */}
     </>
   );

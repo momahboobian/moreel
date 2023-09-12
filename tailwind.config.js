@@ -15,9 +15,9 @@ module.exports = {
         "ternary-light": "#f6f7f8",
 
         // Dark colors
-        "primary-dark": "#0D2438",
-        "secondary-dark": "#102D44",
-        "ternary-dark": "#1E3851",
+        "primary-dark": "#141414",
+        "secondary-dark": "#242526",
+        "ternary-dark": "#110404",
 
         // Extended v3 color
         gray: colors.neutral,
