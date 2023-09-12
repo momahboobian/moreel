@@ -1,5 +1,6 @@
 import Image from "next/image";
 import bannerImage from "../../public/images/gui-yellow.png";
+import CustomButton from "../reusable/CustomButton"; // Rename the imported component
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
           Product Designer and Software developer. I specialized in responsive
           design and visual development.
         </p>
-        <button>ABOUT ME -</button>
+        <CustomButton title={"ABOUT ME ->"} />
 
         {/* <div className="p-20 bg-slate-400">Hi</div> */}
       </div>
