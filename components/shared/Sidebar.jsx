@@ -3,6 +3,7 @@ import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
 import SocialIcons from "../reusable/SocialIcons";
 import { animateSkills } from "../utils/skillsCloud";
+import { FaShareAltSquare } from "react-icons/fa";
 
 const socialLinks = [
   {
@@ -16,6 +17,17 @@ const socialLinks = [
   },
   { type: "website", url: "https://www.moreel.me/" },
 ];
+
+const extraSkills = [
+  "Attention to details",
+  "Adaptability",
+  "Self-motivation",
+  "Organisational skills",
+  "Communication skills",
+  "Problem-solving skills",
+  "Familiarity with editing software programs",
+];
+
 export default function Sidebar() {
   // Call the animation function
 
@@ -77,6 +89,17 @@ export default function Sidebar() {
 
       {/* Line separator */}
       <hr className=" my-6 w-full border-gray-300 opacity-80" />
+      <div className="w-full justify-start text-left space-y-2">
+        <h3 className="text-xl">Extra Skills</h3>
+        <ul className="list-disc ml-6 text-orange-400">
+          {extraSkills.map((skill, index) => (
+            <li key={index} className="text-gray-500">
+              <FaShareAltSquare size={24} className="text-orange-400" />
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
