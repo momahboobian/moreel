@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "tailwindcss/base";
+
 html,
 body {
   padding: 0;
@@ -17,3 +19,54 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+#skills-container {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.skill {
+  position: absolute;
+  animation: float 6s infinite;
+  transition: transform 1s ease-in-out;
+}
+
+#skills-container p {
+  animation-name: cloud-animation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cloud-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the bounce height */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

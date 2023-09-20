@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
 import SocialIcons from "../reusable/SocialIcons";
+import { animateSkills } from "../utils/skillsCloud";
 
 const socialLinks = [
   {
@@ -14,8 +16,13 @@ const socialLinks = [
   },
   { type: "website", url: "https://www.moreel.me/" },
 ];
-
 export default function Sidebar() {
+  // Call the animation function
+
+  useEffect(() => {
+    animateSkills();
+    setInterval(animateSkills, 200000);
+  }, []);
   return (
     <section className="flex flex-col sm:justify-between items-center p-6 mt-5 space-y-6 md:mt-2 bg-secondary-dark text-white rounded-2xl">
       <div className="relative w-32 h-32 overflow-hidden rounded-full">
@@ -65,6 +72,7 @@ export default function Sidebar() {
       <hr className=" my-6 w-full border-gray-300 opacity-80" />
       <div className="w-full justify-start text-left space-y-2">
         <h3 className="text-xl">Skills</h3>
+        <div id="skills-container"></div>
       </div>
 
       {/* Line separator */}
