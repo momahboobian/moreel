@@ -1,5 +1,19 @@
 import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
+import SocialIcons from "../reusable/SocialIcons";
+
+const socialLinks = [
+  {
+    type: "linkedin",
+    url: "https://www.linkedin.com/in/your-linkedin-profile/",
+  },
+  { type: "twitter", url: "https://twitter.com/your-twitter-profile/" },
+  { type: "website", url: "https://www.your-website.com/" },
+  {
+    type: "instagram",
+    url: "https://www.instagram.com/your-instagram-profile/",
+  },
+];
 
 export default function Sidebar() {
   return (
@@ -20,6 +34,9 @@ export default function Sidebar() {
           <span className="">Software Developer</span>{" "}
           <span className="whitespace-pre ">& Video Engineer</span>
         </p>
+      </div>
+      <div className="flex gap-2">
+        <SocialIcons socialLinks={socialLinks} />
       </div>
     </section>
   );
