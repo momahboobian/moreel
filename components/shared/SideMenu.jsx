@@ -16,6 +16,9 @@ export default function SideMenu() {
       <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
         <BiSolidHomeAlt2 size={20} className="text-gray-800" />
       </div>
+      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+        <FaFileCode size={20} className="text-gray-400" />
+      </div>
     </section>
   );
 }
