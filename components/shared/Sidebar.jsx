@@ -37,7 +37,7 @@ export default function Sidebar() {
     setInterval(animateSkills, 200000);
   }, []);
   return (
-    <section className="flex flex-col sm:justify-between items-center p-6 mt-5 space-y-6 md:mt-2 bg-secondary-dark text-white rounded-2xl">
+    <section className="flex flex-col sm:justify-between items-center mt-5 md:ml-3  md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl">
       <div className="relative w-32 h-32 overflow-hidden rounded-full">
         <Image
           layout="fill"

@@ -4,7 +4,7 @@ import CustomButton from "../reusable/CustomButton"; // Rename the imported comp
 
 export default function Hero() {
   return (
-    <section className="flex flex-col sm:justify-between items-center sm:flex-row mt-5 md:mt-2 bg-secondary-dark text-white rounded-2xl">
+    <section className="flex flex-col sm:justify-between items-center mt-5 md:mt-2 sm:flex-row bg-secondary-dark text-white rounded-2xl">
       <div className="w-full md:w-1/3 text-left p-4 ">
         <h1 className="text-5xl font-bold whitespace-pre ">
           Crafted Inspirations,
