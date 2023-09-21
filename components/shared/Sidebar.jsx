@@ -59,7 +59,7 @@ export default function Sidebar() {
       {/* Line separator */}
       <hr className="my-4 w-full border-gray-300 opacity-80" />
       <div className="text-left text-white whitespace-pre">
-        <p className="flex justify-between text-base gap-8">
+        <p className="flex justify-between text-base gap-24">
           <span>Email:</span>{" "}
           <a href="mailto:info@moreel.me" className="text-right">
             info@moreel.me
