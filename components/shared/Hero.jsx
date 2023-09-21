@@ -17,7 +17,7 @@ export default function Hero() {
           Product Designer and Software developer. I specialized in responsive
           design and visual development.
         </p>
-        <CustomButton title={"ABOUT ME ->"} />
+        <CustomButton title={"About Me ->"} link={""} />
 
         {/* <div className="p-20 bg-slate-400">Hi</div> */}
       </div>

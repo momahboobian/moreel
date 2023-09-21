@@ -3,7 +3,8 @@ import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
 import SocialIcons from "../reusable/SocialIcons";
 import { animateSkills } from "../utils/skillsCloud";
-import { FaShareAltSquare } from "react-icons/fa";
+import CustomButton from "../reusable/CustomButton";
+import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
 const socialLinks = [
   {
@@ -25,7 +26,7 @@ const extraSkills = [
   "Organisational skills",
   "Communication skills",
   "Problem-solving skills",
-  "Familiarity with editing software programs",
+  "Professincy on",
 ];
 
 export default function Sidebar() {
@@ -57,7 +58,6 @@ export default function Sidebar() {
       </div>
       {/* Line separator */}
       <hr className="my-4 w-full border-gray-300 opacity-80" />
-
       <div className="text-left text-white whitespace-pre">
         <p className="flex justify-between text-base gap-8">
           <span>Email:</span>{" "}
@@ -69,7 +69,6 @@ export default function Sidebar() {
           <span>Location:</span> London, UK
         </p>
       </div>
-
       {/* Line separator */}
       <hr className="my-6 w-full border-gray-300 opacity-80" />
       <div className="w-full justify-start text-left space-y-2">
@@ -79,27 +78,35 @@ export default function Sidebar() {
         <p className="pt-2 font-normal  text-gray-500">Persian</p>
         <hr className="w-full border-orange-400 border-t-4 rounded-md" />
       </div>
-
       {/* Line separator */}
       <hr className=" my-6 w-full border-gray-300 opacity-80" />
       <div className="w-full justify-start text-left space-y-2">
         <h3 className="text-xl">Skills</h3>
         <div id="skills-container"></div>
       </div>
-
       {/* Line separator */}
       <hr className=" my-6 w-full border-gray-300 opacity-80" />
       <div className="w-full justify-start text-left space-y-2">
         <h3 className="text-xl">Extra Skills</h3>
-        <ul className="list-disc ml-6 text-orange-400">
+        <ul className="list-none text-orange-400 space-y-1">
           {extraSkills.map((skill, index) => (
-            <li key={index} className="text-gray-500">
-              <FaShareAltSquare size={24} className="text-orange-400" />
+            <li key={index} className="text-gray-500 flex items-center">
+              <AiOutlineBlock size={24} className="text-orange-400 mr-2" />
               {skill}
             </li>
           ))}
         </ul>
       </div>
+
+      {/* Line separator */}
+      <hr className=" my-6 w-full border-gray-300 opacity-80" />
+      <CustomButton
+        title={"Download CV"}
+        link={""}
+        icon={<AiOutlineDownload />}
+      >
+        Download CV
+      </CustomButton>
     </section>
   );
 }
