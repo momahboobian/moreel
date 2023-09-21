@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import Hero from "../components/shared/Hero";
 import Sidebar from "../components/shared/Sidebar";
 import SideMenu from "../components/shared/SideMenu";
