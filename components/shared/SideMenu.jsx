@@ -22,6 +22,9 @@ export default function SideMenu() {
       <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
         <MdWork size={20} className="text-gray-400" />
       </div>
+      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+        <BiSolidLeaf size={20} className="text-gray-400" />
+      </div>
     </section>
   );
 }
