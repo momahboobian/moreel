@@ -3,7 +3,7 @@ import CustomCard from "./CustomCard";
 
 export default function Expertise() {
   return (
-    <section className="flex flex-col sm:justify-between items-start mt-5 md:mt-2 text-white rounded-2xl">
+    <section className="flex flex-col justify-between mt-5 md:mt-2 text-white rounded-2xl">
       <div className="flex flex-col items-center w-full p-4 ">
         <h1 className="text-5xl font-bold ">Expertise</h1>
         <p className="font-normal text-base text-gray-500 py-6">
@@ -12,7 +12,7 @@ export default function Expertise() {
           production. This diverse expertise fosters innovative problem-solving.
         </p>
       </div>
-      <div className=" grid w-full gap-6">
+      <div className=" grid grid-cols-3 items-center text-center gap-6">
         <CustomCard
           icon={
             <Image
