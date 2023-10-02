@@ -8,7 +8,7 @@ export default function Home() {
     <main className="flex sm:justify-between items-start sm:flex-col gap-4">
       <section className="flex flex-col sm:justify-between items-start sm:flex-row gap-4">
         <SideCol />
-        <div className="">
+        <div className="flex flex-col max-w-full">
           <Hero />
 
           <Expertise />

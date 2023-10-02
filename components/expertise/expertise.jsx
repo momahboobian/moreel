@@ -12,7 +12,46 @@ export default function Expertise() {
           production. This diverse expertise fosters innovative problem-solving.
         </p>
       </div>
-      <div className=" flex gap-6">
+      <div className=" grid w-full gap-6">
+        <CustomCard
+          icon={
+            <Image
+              className="text-base m-4"
+              src="/images/svg/coding.svg"
+              alt="Web-Development"
+              width={100}
+              height={100}
+            />
+          }
+          title={"Web Development"}
+          desc={"Blog, E-Commerce"}
+        />
+        <CustomCard
+          icon={
+            <Image
+              className="text-base m-4"
+              src="/images/svg/coding.svg"
+              alt="Web-Development"
+              width={100}
+              height={100}
+            />
+          }
+          title={"Web Development"}
+          desc={"Blog, E-Commerce"}
+        />
+        <CustomCard
+          icon={
+            <Image
+              className="text-base m-4"
+              src="/images/svg/coding.svg"
+              alt="Web-Development"
+              width={100}
+              height={100}
+            />
+          }
+          title={"Web Development"}
+          desc={"Blog, E-Commerce"}
+        />
         <CustomCard
           icon={
             <Image
