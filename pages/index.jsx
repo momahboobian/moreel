@@ -8,11 +8,11 @@ export default function Home() {
     <main className="flex sm:justify-between items-start sm:flex-col gap-4">
       <section className="flex flex-col sm:justify-between items-start sm:flex-row gap-4">
         <SideCol />
-        <section className=" sm:justify-between items-start sm:flex-row gap-4">
+        <div className="">
           <Hero />
 
           <Expertise />
-        </section>
+        </div>
         <SideMenu />
       </section>
 
