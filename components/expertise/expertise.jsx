@@ -26,6 +26,7 @@ export default function Expertise() {
           title={"Web Development"}
           desc={"Blog, E-Commerce"}
         />
+
         <CustomCard
           icon={
             <Image
