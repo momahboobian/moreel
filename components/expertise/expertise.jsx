@@ -16,7 +16,7 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="text-base m-4"
+              className="text-base m-6"
               src="/images/svg/coding.svg"
               alt="Web-Development"
               width={100}
@@ -30,7 +30,20 @@ export default function Expertise() {
           icon={
             <Image
               className="text-base m-4"
-              src="/images/svg/coding.svg"
+              src="/images/svg/illustration.svg"
+              alt="Web-Development"
+              width={98}
+              height={98}
+            />
+          }
+          title={"Web Development"}
+          desc={"Blog, E-Commerce"}
+        />
+        <CustomCard
+          icon={
+            <Image
+              className="text-base m-5"
+              src="/images/svg/audio.svg"
               alt="Web-Development"
               width={100}
               height={100}
@@ -43,7 +56,20 @@ export default function Expertise() {
           icon={
             <Image
               className="text-base m-4"
-              src="/images/svg/coding.svg"
+              src="/images/svg/photographer.svg"
+              alt="Web-Development"
+              width={95}
+              height={95}
+            />
+          }
+          title={"Web Development"}
+          desc={"Blog, E-Commerce"}
+        />
+        <CustomCard
+          icon={
+            <Image
+              className="text-base m-4"
+              src="/images/svg/game-development.svg"
               alt="Web-Development"
               width={100}
               height={100}
@@ -56,33 +82,7 @@ export default function Expertise() {
           icon={
             <Image
               className="text-base m-4"
-              src="/images/svg/coding.svg"
-              alt="Web-Development"
-              width={100}
-              height={100}
-            />
-          }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
-        />
-        <CustomCard
-          icon={
-            <Image
-              className="text-base m-4"
-              src="/images/svg/coding.svg"
-              alt="Web-Development"
-              width={100}
-              height={100}
-            />
-          }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
-        />
-        <CustomCard
-          icon={
-            <Image
-              className="text-base m-4"
-              src="/images/svg/coding.svg"
+              src="/images/svg/microphone.svg"
               alt="Web-Development"
               width={100}
               height={100}
