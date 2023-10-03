@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CustomCard from "../expertise/CustomCard";
+import CustomCard from "./CustomCard";
 
 export default function Expertise() {
   return (
