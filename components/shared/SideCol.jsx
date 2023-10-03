@@ -29,7 +29,7 @@ const extraSkills = [
   "Professincy on",
 ];
 
-export default function Sidebar() {
+export default function SideCol() {
   // Call the animation function
 
   useEffect(() => {

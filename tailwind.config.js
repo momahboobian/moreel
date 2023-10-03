@@ -1,3 +1,4 @@
+// tailwind.config.js
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -7,6 +8,11 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    fill: (theme) => ({
+      red: theme("colors.red.400"),
+      green: theme("colors.green.400"),
+      blue: theme("colors.blue.400"),
+    }),
     extend: {
       colors: {
         // Light colors
