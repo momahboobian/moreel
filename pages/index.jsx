@@ -3,18 +3,21 @@ import SideCol from "../components/shared/SideCol";
 import SideMenu from "../components/shared/SideMenu";
 import Expertise from "../components/expertise/Expertise";
 import Portfolio from "../components/portfolio/Portfolio";
+import Recommendations from "../components/recommendations/Recommendations";
 
 export default function Home() {
   return (
     <main className="flex sm:justify-between items-start sm:flex-col gap-4">
       <section className="flex flex-col sm:justify-between items-start sm:flex-row gap-4">
         <SideCol />
-        <div className="flex flex-col max-w-full">
+        <div className="flex flex-col max-w-full ">
           <Hero />
 
           <Expertise />
 
           <Portfolio />
+
+          <Recommendations />
         </div>
         <SideMenu />
       </section>
