@@ -27,8 +27,8 @@ export default function Portfolio() {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-3 items-center text-center gap-4 p-2">
-        <div className="relative w-96 h-80 overflow-hidden">
+      <div className="grid grid-cols-3 items-center text-center gap-4 pt-10">
+        <div className="relative h-80 max-w-full">
           <Image
             layout="fill"
             objectFit="cover"
@@ -36,7 +36,7 @@ export default function Portfolio() {
             alt="Profile image"
           />
         </div>
-        <div className="relative w-96 h-80 overflow-hidden">
+        <div className="relative h-80 max-w-full">
           <Image
             layout="fill"
             objectFit="cover"
@@ -44,7 +44,7 @@ export default function Portfolio() {
             alt="Profile image"
           />
         </div>
-        <div className="relative w-96 h-80 overflow-hidden">
+        <div className="relative h-80 max-w-full">
           <Image
             layout="fill"
             objectFit="cover"
@@ -52,7 +52,7 @@ export default function Portfolio() {
             alt="Profile image"
           />
         </div>
-        <div className="relative w-96 h-80 overflow-hidden">
+        <div className="relative h-80 max-w-full">
           <Image
             layout="fill"
             objectFit="cover"
@@ -60,7 +60,7 @@ export default function Portfolio() {
             alt="Profile image"
           />
         </div>
-        <div className="relative w-96 h-80 overflow-hidden">
+        <div className="relative h-80 max-w-full">
           <Image
             layout="fill"
             objectFit="cover"
@@ -68,7 +68,7 @@ export default function Portfolio() {
             alt="Profile image"
           />
         </div>
-        <div className="relative w-96 h-80 overflow-hidden">
+        <div className="relative h-80 max-w-full">
           <Image
             layout="fill"
             objectFit="cover"
