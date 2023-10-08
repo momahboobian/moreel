@@ -1,3 +1,9 @@
 export default function ContactInfo() {
-  return <div className="flex">Contact Information</div>;
+  return (
+    <section className="flex text-white">
+      <div className="flex flex-col items-start text-start  w-full p-4 ">
+        <h5 className="text-3xl font-normal">Contact Information</h5>
+      </div>
+    </section>
+  );
 }

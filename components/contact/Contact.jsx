@@ -3,7 +3,7 @@ import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
-    <div className="flex">
+    <div className="flex justify-between mt-5 md:mt-2 pt-16">
       <ContactForm />
       <ContactInfo />
     </div>
