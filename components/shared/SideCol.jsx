@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
 import SocialIcons from "../reusable/SocialIcons";
-import { animateSkills } from "../utils/SkillsCloud";
+import { animateSkills } from "../utils/skillsCloud";
 import CustomButton from "../reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
