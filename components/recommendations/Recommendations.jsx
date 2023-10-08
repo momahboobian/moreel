@@ -11,3 +11,13 @@ export default function Recommendations() {
     </section>
   );
 }
+<div className="grid grid-cols-3 items-center text-center gap-4 pt-10">
+        <div className="relative  max-w-full">
+          <Image src={cardImage} alt="Profile image" />
+        </div>
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
+        </div>
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
+        </div>
