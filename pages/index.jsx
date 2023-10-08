@@ -2,6 +2,7 @@ import Hero from "../components/shared/Hero";
 import SideCol from "../components/shared/SideCol";
 import SideMenu from "../components/shared/SideMenu";
 import Expertise from "../components/expertise/Expertise";
+import Portfolio from "../components/portfolio/portfolio";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
           <Hero />
 
           <Expertise />
+
+          <Portfolio />
         </div>
         <SideMenu />
       </section>
