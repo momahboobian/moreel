@@ -22,11 +22,7 @@ export default function Hero() {
         {/* <div className="p-20 bg-slate-400">Hi</div> */}
       </div>
       <div className="w-full sm:w-1/3 text-right float-right mt-8 sm:mt-0 ">
-        <Image
-          layout="responsive"
-          src={bannerImage}
-          alt="Data web banner image"
-        />
+        <Image src={bannerImage} alt="Data web banner image" />
       </div>
     </section>
   );

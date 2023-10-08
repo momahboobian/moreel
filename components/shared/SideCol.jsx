@@ -39,12 +39,7 @@ export default function SideCol() {
   return (
     <section className="flex flex-col sm:justify-between items-center mt-5 md:ml-3  md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl">
       <div className="relative w-32 h-32 overflow-hidden rounded-full">
-        <Image
-          layout="fill"
-          objectFit="cover"
-          src={bannerImage}
-          alt="Profile image"
-        />
+        <Image src={bannerImage} alt="Profile image" width={500} height={500} />
       </div>
       <div className="flex flex-col items-center w-full text-left">
         <h2 className="text-2xl whitespace-pre">Mo Mahboobian</h2>
