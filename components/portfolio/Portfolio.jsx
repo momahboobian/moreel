@@ -28,53 +28,23 @@ export default function Portfolio() {
         </ul>
       </div>
       <div className="grid grid-cols-3 items-center text-center gap-4 pt-10">
-        <div className="relative h-80 max-w-full">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cardImage}
-            alt="Profile image"
-          />
+        <div className="relative  max-w-full">
+          <Image src={cardImage} alt="Profile image" />
         </div>
-        <div className="relative h-80 max-w-full">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cardImage}
-            alt="Profile image"
-          />
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
         </div>
-        <div className="relative h-80 max-w-full">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cardImage}
-            alt="Profile image"
-          />
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
         </div>
-        <div className="relative h-80 max-w-full">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cardImage}
-            alt="Profile image"
-          />
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
         </div>
-        <div className="relative h-80 max-w-full">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cardImage}
-            alt="Profile image"
-          />
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
         </div>
-        <div className="relative h-80 max-w-full">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cardImage}
-            alt="Profile image"
-          />
+        <div className="relative max-w-full">
+          <Image src={cardImage} alt="Profile image" />
         </div>
       </div>
     </section>
