@@ -12,11 +12,12 @@ export default function Expertise() {
           production. This diverse expertise fosters innovative problem-solving.
         </p>
       </div>
-      <div className=" grid grid-cols-3 items-center text-center gap-6">
+      <div className="grid grid-cols-3 items-center text-center gap-6">
         <CustomCard
           icon={
             <Image
-              className="text-base m-6"
+              layout=""
+              className="text-base m-6 "
               src="/images/svg/coding.svg"
               alt="Web-Development"
               width={100}

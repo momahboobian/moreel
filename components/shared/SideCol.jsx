@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
 import SocialIcons from "../reusable/SocialIcons";
-import { animateSkills } from "../utils/skillsCloud";
+import { animateSkills } from "../utils/SkillsCloud";
 import CustomButton from "../reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
@@ -38,14 +38,14 @@ export default function SideCol() {
   }, []);
   return (
     <section className="flex flex-col sm:justify-between items-center mt-5 md:ml-3  md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl">
-      <div className="relative w-32 h-32 overflow-hidden rounded-full">
+      {/* <div className="relative w-32 h-32 overflow-hidden rounded-full">
         <Image
           layout="fill"
           objectFit="cover"
           src={bannerImage}
           alt="Profile image"
         />
-      </div>
+      </div> */}
       <div className="flex flex-col items-center w-full text-left">
         <h2 className="text-2xl whitespace-pre">Mo Mahboobian</h2>
         <p className="flex flex-col items-center mt-4 font-normal text-base text-gray-500">
