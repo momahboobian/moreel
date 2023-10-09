@@ -4,6 +4,7 @@ import SideMenu from "../components/shared/SideMenu";
 import Expertise from "../components/expertise/Expertise";
 import Portfolio from "../components/portfolio/Portfolio";
 import Recommendations from "../components/recommendations/Recommendations";
+import Contact from "../components/contact/Contact";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
           <Portfolio />
 
           <Recommendations />
+
+          <Contact />
         </div>
         <SideMenu />
       </section>
