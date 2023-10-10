@@ -1,8 +1,8 @@
-import image01 from "../../public/images/design.jpg";
-import image02 from "../../public/images/cards_02.jpg";
-import image03 from "../../public/images/cards_03.jpg";
-import image04 from "../../public/images/cards_04.jpg";
-import image05 from "../../public/images/cards_05.jpg";
+import image01 from "../../public/images/Cards_01.jpg";
+import image02 from "../../public/images/Cards_02.jpg";
+import image03 from "../../public/images/Cards_03.jpg";
+import image04 from "../../public/images/Cards_04.jpg";
+import image05 from "../../public/images/Cards_05.jpg";
 import PortfolioCard from "./PortfolioCard";
 
 export default function Portfolio() {
