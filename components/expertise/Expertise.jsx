@@ -3,25 +3,24 @@ import CustomCard from "./CustomCard";
 
 export default function Expertise() {
   return (
-    <section className="flex flex-col justify-between pt-16 mt-5 md:mt-2 text-white rounded-2xl">
-      <div className="flex flex-col items-center w-full p-4 ">
+    <section className="flex flex-col justify-between pt-16 mt-5 md:mt-2 text-white rounded-2xl w-full">
+      <div className="flex flex-col items-center p-4 sm:px-32 xl:px-48 2xl:px-60">
         <h2 className="text-4xl font-semibold">Expertise</h2>
-        <p className="font-normal text-base text-gray-500 py-6">
+        <p className="font-normal text-base text-center text-gray-500 p-4 ">
           Experienced in software development and product design, I bring a
           versatile skill set that complements my proficiency in video and audio
-          production. This diverse expertise fosters innovative problem-solving.
+          production.
         </p>
       </div>
-      <div className="grid grid-cols-3 items-center text-center gap-6">
+      <div className="grid 2xl:grid-cols-3 grid-cols-2 gap-4">
         <CustomCard
           icon={
             <Image
-              layout=""
-              className="text-base m-6 "
+              className="m-6"
               src="/images/svg/coding.svg"
               alt="Web-Development"
-              width={100}
-              height={100}
+              width={90}
+              height={90}
             />
           }
           title={"Web Development"}
@@ -31,67 +30,67 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="text-base m-4"
+              className="m-4"
               src="/images/svg/illustration.svg"
-              alt="Web-Development"
-              width={98}
-              height={98}
+              alt="UI-UX-Design"
+              width={88}
+              height={88}
             />
           }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
+          title={"UI-UX Design"}
+          desc={"User Interface, User Experience"}
         />
         <CustomCard
           icon={
             <Image
               className="text-base m-5"
               src="/images/svg/audio.svg"
-              alt="Web-Development"
-              width={100}
-              height={100}
+              alt="Video-Production"
+              width={90}
+              height={90}
             />
           }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
+          title={"Video Production"}
+          desc={"Vide & Audio Multimedia showcase"}
         />
         <CustomCard
           icon={
             <Image
               className="text-base m-4"
               src="/images/svg/photographer.svg"
-              alt="Web-Development"
-              width={95}
-              height={95}
+              alt="Mobile-Application"
+              width={85}
+              height={85}
             />
           }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
+          title={"Mobile Application"}
+          desc={"Smartphones & Tablet App"}
         />
         <CustomCard
           icon={
             <Image
               className="text-base m-4"
               src="/images/svg/game-development.svg"
-              alt="Web-Development"
-              width={100}
-              height={100}
+              alt="Game-Development"
+              width={90}
+              height={90}
             />
           }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
+          title={"Game Development"}
+          desc={"2D & 3d Games"}
         />
         <CustomCard
           icon={
             <Image
               className="text-base m-4"
               src="/images/svg/microphone.svg"
-              alt="Web-Development"
-              width={100}
-              height={100}
+              alt="Sound-Design"
+              width={90}
+              height={90}
             />
           }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
+          title={"Sound Design"}
+          desc={"SFX, Music Product"}
         />
       </div>
     </section>

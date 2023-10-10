@@ -11,8 +11,10 @@ export default function Home() {
   return (
     <main className="flex sm:justify-between sm:flex-col gap-4">
       <section className="flex flex-col sm:justify-between items-start sm:flex-row gap-4">
-        <SideCol />
-        <div className="flex flex-col max-w-full ">
+        <div className="flex-none">
+          <SideCol />
+        </div>
+        <div className="shrink flex-col max-w-full ">
           <Hero />
 
           <Expertise />
@@ -23,6 +25,7 @@ export default function Home() {
 
           <Contact />
         </div>
+
         <SideMenu />
       </section>
 
