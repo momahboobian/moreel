@@ -3,10 +3,11 @@ import Image from "next/image";
 export default function Recommendations() {
   return (
     <section className="flex flex-col justify-between pt-16 mt-5 md:mt-2 text-white rounded-2xl">
-      <div className="flex flex-col items-center w-full p-4 ">
+      <div className="flex flex-col items-center p-4 sm:px-32 xl:px-48 2xl:px-60">
         <h4 className="text-4xl font-semibold">Recommendations</h4>
-        <p className="font-normal text-base text-gray-500 py-6">
-          Recommendations
+        <p className="font-normal text-base text-center text-gray-500 p-4">
+          Read what others have to say about my work and professional character
+          in these recommendations.
         </p>
       </div>
       <div className="flex justify-center font-normal text-center">

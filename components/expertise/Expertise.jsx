@@ -4,25 +4,15 @@ import CustomCard from "./CustomCard";
 export default function Expertise() {
   return (
     <section className="flex flex-col justify-between pt-16 mt-5 md:mt-2 text-white rounded-2xl w-full">
-      <div className="flex flex-col items-center w-full p-4 ">
+      <div className="flex flex-col items-center p-4 sm:px-32 xl:px-48 2xl:px-60">
         <h2 className="text-4xl font-semibold">Expertise</h2>
-        <p className="font-normal text-base text-gray-500 p-6">
+        <p className="font-normal text-base text-center text-gray-500 p-4 ">
           Experienced in software development and product design, I bring a
           versatile skill set that complements my proficiency in video and audio
-          production. This diverse expertise fosters innovative problem-solving.
+          production.
         </p>
       </div>
-      {/* <div className="grid md:grid-cols-3 gap-4">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <div>04</div>
-        <div>05</div>
-        <div>06</div>
-        <div>07</div>
-        <div>09</div>
-      </div> */}
-      <div className="grid  gap-4 2xl:grid-cols-3 grid-cols-2">
+      <div className="grid 2xl:grid-cols-3 grid-cols-2 gap-4">
         <CustomCard
           icon={
             <Image
