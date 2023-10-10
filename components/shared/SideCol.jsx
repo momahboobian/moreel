@@ -37,7 +37,7 @@ export default function SideCol() {
     setInterval(animateSkills, 200000);
   }, []);
   return (
-    <section className="flex flex-col sm:justify-between items-center mt-5 md:ml-3 md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl">
+    <section className="flex flex-col sm:justify-between items-center mt-5 md:ml-3 md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl pb-36">
       <div className="relative w-32 h-32 overflow-hidden rounded-full">
         <Image src={bannerImage} alt="Profile image" width={500} height={500} />
       </div>

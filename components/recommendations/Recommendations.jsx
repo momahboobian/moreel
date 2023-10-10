@@ -12,7 +12,7 @@ export default function Recommendations() {
       <div className="flex justify-center font-normal text-center">
         <div className="grid grid-cols-3 gap-4 ">
           {/* Recommendation Card 1 */}
-          <div className="max-w-full bg-white rounded-lg shadow-md p-4">
+          <article className="max-w-full bg-white rounded-lg shadow-md p-4">
             {/* Rating */}
             <div className="flex items-center mb-2">
               <span className="text-yellow-400 text-xl">
@@ -43,10 +43,10 @@ export default function Recommendations() {
                 <p className="text-gray-500">Title</p>
               </div>
             </div>
-          </div>
+          </article>
 
           {/* Recommendation Card 2 (Repeat similar structure for each card) */}
-          <div className="max-w-full bg-white rounded-lg shadow-md p-4">
+          <article className="max-w-full bg-white rounded-lg shadow-md p-4">
             {/* Rating */}
             <div className="flex items-center mb-2">
               <span className="text-yellow-400 text-xl">
@@ -77,10 +77,10 @@ export default function Recommendations() {
                 <p className="text-gray-500">Title</p>
               </div>
             </div>
-          </div>
+          </article>
 
           {/* Recommendation Card 3 (Repeat similar structure for each card) */}
-          <div className="max-w-full bg-white rounded-lg shadow-md p-4">
+          <article className="max-w-full bg-white rounded-lg shadow-md p-4">
             {/* Rating */}
             <div className="flex items-center mb-2">
               <span className="text-yellow-400 text-xl">
@@ -111,7 +111,7 @@ export default function Recommendations() {
                 <p className="text-gray-500">Title</p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>

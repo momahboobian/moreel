@@ -11,8 +11,8 @@ import {
 
 export default function SideMenu() {
   return (
-    <section className="flex-none">
-      <div className="flex flex-col sm:justify-between items-center mt-5 md:mr-3 md:mt-2 p-6 bg-secondary-dark text-white rounded-2xl ">
+    <section className="flex-none ">
+      <div className="flex flex-col sm:justify-between items-center mt-5 md:mr-3 md:mt-2 p-6 bg-secondary-dark text-white rounded-2xl pb-60">
         <div className="flex-none">
           <GiMoon
             size={28}
@@ -57,7 +57,7 @@ export default function SideMenu() {
             />
           </div>
         </div>
-        <div className="grow h-96 mt-4 mb-36"> </div>
+        <div className="grow h-96 mt-4 mb-10"> </div>
       </div>
     </section>
   );
