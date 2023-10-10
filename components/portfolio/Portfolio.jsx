@@ -9,20 +9,20 @@ export default function Portfolio() {
         <p className="font-normal text-base text-gray-500 py-6">portfolio</p>
       </div>
       <div className="flex justify-center font-normal	text-center">
-        <ul className="flex text-start gap-6 ">
+        <ul className="flex text-start gap-6 whitespace-nowrap">
           <li className=" text-orange-400 hover:cursor-pointer ">
             All Categories
           </li>
-          <li className=" hover:text-orange-400  hover:cursor-pointer ">
+          <li className=" hover:text-orange-400 hover:cursor-pointer ">
             UI Design
           </li>
           <li className=" hover:text-orange-400 hover:cursor-pointer ">
             Web Development
           </li>
-          <li className=" hover:text-orange-400  hover:cursor-pointer ">
+          <li className=" hover:text-orange-400 hover:cursor-pointer ">
             Video Production
           </li>
-          <li className=" hover:text-orange-400  hover:cursor-pointer ">
+          <li className=" hover:text-orange-400 hover:cursor-pointer ">
             Sound Design
           </li>
         </ul>

@@ -11,7 +11,7 @@ import {
 
 export default function SideMenu() {
   return (
-    <section className="flex ">
+    <section className="flex-none">
       <div className="flex flex-col sm:justify-between items-center mt-5 md:mr-3 md:mt-2 p-6 bg-secondary-dark text-white rounded-2xl ">
         <div className="flex-none">
           <GiMoon

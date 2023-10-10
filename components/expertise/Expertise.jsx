@@ -52,7 +52,7 @@ export default function Expertise() {
             />
           }
           title={"Video Production"}
-          desc={"Blog, E-Commerce"}
+          desc={"Vide & Audio Multimedia showcase"}
         />
         <CustomCard
           icon={
