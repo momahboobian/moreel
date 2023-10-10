@@ -1,4 +1,8 @@
-import cardImage from "../../public/images/design.jpg";
+import image01 from "../../public/images/design.jpg";
+import image02 from "../../public/images/cards_02.jpg";
+import image03 from "../../public/images/cards_03.jpg";
+import image04 from "../../public/images/cards_04.jpg";
+import image05 from "../../public/images/cards_05.jpg";
 import PortfolioCard from "./PortfolioCard";
 
 export default function Portfolio() {
@@ -31,12 +35,12 @@ export default function Portfolio() {
         </ul>
       </div>
       <div className="grid grid-cols-3 items-center text-center gap-4 pt-10  ">
-        <PortfolioCard image={cardImage} />
-        <PortfolioCard image={cardImage} />
-        <PortfolioCard image={cardImage} />
-        <PortfolioCard image={cardImage} />
-        <PortfolioCard image={cardImage} />
-        <PortfolioCard image={cardImage} />
+        <PortfolioCard image={image01} />
+        <PortfolioCard image={image02} />
+        <PortfolioCard image={image03} />
+        <PortfolioCard image={image04} />
+        <PortfolioCard image={image05} />
+        <PortfolioCard image={image01} />
       </div>
     </section>
   );
