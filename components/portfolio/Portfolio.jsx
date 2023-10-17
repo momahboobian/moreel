@@ -1,8 +1,9 @@
-import image01 from "../../public/images/Cards_01.jpg";
-import image02 from "../../public/images/Cards_02.jpg";
-import image03 from "../../public/images/Cards_03.jpg";
-import image04 from "../../public/images/Cards_04.jpg";
-import image05 from "../../public/images/Cards_05.jpg";
+import image01 from "../../public/images/card_good-pr.jpg";
+import image02 from "../../public/images/Cards_01.jpg";
+import image03 from "../../public/images/card-gh-profile2.jpg";
+import image04 from "../../public/images/card-imnotmybody.jpg";
+import image05 from "../../public/images/card-vr.jpg";
+import image06 from "../../public/images/card-wp-belsize.jpg";
 import PortfolioCard from "./PortfolioCard";
 
 export default function Portfolio() {
@@ -40,7 +41,7 @@ export default function Portfolio() {
         <PortfolioCard image={image03} />
         <PortfolioCard image={image04} />
         <PortfolioCard image={image05} />
-        <PortfolioCard image={image01} />
+        <PortfolioCard image={image06} />
       </div>
     </section>
   );
