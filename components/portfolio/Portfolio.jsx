@@ -31,7 +31,7 @@ export default function Portfolio() {
             Video Production
           </li>
           <li className=" hover:text-orange-400 hover:cursor-pointer ">
-            Sound Design
+            WordPress
           </li>
         </ul>
       </div>
