@@ -57,10 +57,10 @@ export default function Expertise() {
           icon={
             <Image
               className="text-base m-4"
-              src="/images/svg/photographer.svg"
+              src="/images/svg/mobile.svg"
               alt="Mobile-Application"
-              width={85}
-              height={85}
+              width={100}
+              height={100}
             />
           }
           title={"Mobile Application"}
@@ -83,14 +83,14 @@ export default function Expertise() {
           icon={
             <Image
               className="text-base m-4"
-              src="/images/svg/microphone.svg"
-              alt="Sound-Design"
+              src="/images/svg/photographer.svg"
+              alt="Photographer"
               width={90}
               height={90}
             />
           }
-          title={"Sound Design"}
-          desc={"SFX, Music Product"}
+          title={"Photography"}
+          desc={"Image & Portrait"}
         />
       </div>
     </section>
