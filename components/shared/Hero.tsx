@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <>
       <div className={`${isModalOpen ? "filter blur-[5px]" : ""}`}>
-        <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-2 bg-secondary-dark text-white rounded-2xl mx-2">
+        <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-2 bg-secondary-dark text-white rounded-2xl max-w-6xl mx-auto">
           <div className="w-full md:w-1/2 text-left p-8">
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold whitespace-pre-line">
               Crafted Inspirations,

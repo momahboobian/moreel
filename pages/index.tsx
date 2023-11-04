@@ -11,12 +11,13 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-start min-h-screen">
       <section className="flex flex-col md:flex-row justify-between items-start gap-4">
-        {/* <div className="flex-none">
+        <div className="w-1/3">
           <SideCol />
-        </div> */}
-        <section className="shrink flex-col max-w-full ">
+        </div>
+        <section className="shrink flex-col 2/3 ">
           <Hero />
           {/* 
+
           <Expertise />
 
           <Portfolio />
@@ -29,9 +30,9 @@ export default function Home() {
         {/* <SideMenu /> */}
       </section>
 
-      {/* <footer className="flex justify-center items-center text-center pt-10 w-full">
+      <footer className="flex justify-center items-center text-center pt-10 w-full">
         <Footer />
-      </footer> */}
+      </footer>
     </main>
   );
 }

@@ -2,7 +2,7 @@ import { FaLinkedin, FaTwitter, FaGlobe, FaInstagram } from "react-icons/fa";
 
 export default function SocialIcons({ socialLinks }) {
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-5 sm:space-x-6 md:space-x-8">
       {socialLinks.map((link, index) => (
         <a
           key={index}
