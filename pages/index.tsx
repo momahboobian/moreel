@@ -1,4 +1,4 @@
-import Hero from "../components/shared/Hero";
+import Hero from "../components/hero/Hero";
 import SideCol from "../components/shared/SideCol";
 import SideMenu from "../components/shared/SideMenu";
 import Expertise from "../components/expertise/Expertise";
@@ -18,9 +18,9 @@ export default function Home() {
           <Hero />
 
           <Expertise />
-          {/* 
 
           <Portfolio />
+          {/* 
 
           <Recommendations />
 
