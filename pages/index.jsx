@@ -9,8 +9,8 @@ import Footer from "../components/shared/Footer";
 
 export default function Home() {
   return (
-    <main className="flex sm:justify-between sm:flex-col gap-4">
-      <section className="flex flex-col sm:justify-between items-start sm:flex-row gap-4">
+    <main className="flex flex-col items-center justify-start min-h-screen">
+      <section className="flex flex-col md:flex-row justify-between items-start gap-4">
         {/* <div className="flex-none">
           <SideCol />
         </div> */}
