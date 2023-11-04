@@ -3,17 +3,17 @@ import React from "react";
 interface CustomButtonProps {
   title: string;
   link?: string;
-  icon?: any;
+  icon?: JSX.Element;
   onClick?: () => void;
   children?: React.ReactNode;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({
+export default function CustomButton({
   title,
   link,
   icon,
   onClick,
-}) => {
+}: CustomButtonProps) {
   if (link) {
     return (
       <a
@@ -37,6 +37,4 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         React.cloneElement(icon, { size: 24, style: { marginLeft: "8px" } })}
     </button>
   );
-};
-
-export default CustomButton;
+}

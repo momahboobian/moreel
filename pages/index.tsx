@@ -10,15 +10,15 @@ import Footer from "../components/shared/Footer";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-start min-h-screen">
-      <section className="flex flex-col md:flex-row justify-between items-start gap-4">
-        <div className="w-1/3">
+      <section className="flex flex-col sm:flex-row justify-between items-start gap-1">
+        <div className="max-w-md">
           <SideCol />
         </div>
-        <section className="shrink flex-col 2/3 ">
+        <section className="max-w-6xl p-4 sm:pt-2 lg:pt-4 sm:p-0">
           <Hero />
-          {/* 
 
           <Expertise />
+          {/* 
 
           <Portfolio />
 
