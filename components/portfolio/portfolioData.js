@@ -22,7 +22,7 @@ const portfolioData = [
     id: 3,
     image: "/images/card-gh-profile2.jpg",
     alt: "Description for Image 3",
-    tags: ["UI Design", "Video Production"],
+    tags: ["UI Design", "Front-End", "Back-End", "Next.js", "Prisma"],
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const portfolioData = [
     id: 5,
     image: "/images/card-vr.jpg",
     alt: "Description for Image 5",
-    tags: ["UI Design", "Video Production", "3D Modeling"],
+    tags: ["UI Design", "Front-End", "Back-End", "Next.js", "React"],
   },
   {
     id: 6,

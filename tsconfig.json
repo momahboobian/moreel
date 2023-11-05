@@ -36,7 +36,8 @@
     ".next/types/**/*.ts",
     "components/contact/Contact.jsx",
     "components/contact/ContactForm.jsx",
-    "components/contact/ContactInfo.jsx"
+    "components/contact/ContactInfo.jsx",
+    "components/portfolio/FilteredPortfolio.jsx"
   ],
   "exclude": [
     "node_modules"

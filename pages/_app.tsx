@@ -2,9 +2,13 @@ import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import DefaultLayout from "../components/layout/DefaultLayout";
 import { RecoilRoot } from "recoil";
-// import UseScrollToTop from "@hooks/useScrollToTop";
 
-function MyApp({ Component, pageProps }) {
+interface MyAppProps {
+  Component: React.ElementType;
+  pageProps: Record<string, unknown>;
+}
+
+export default function MyApp({ Component, pageProps }: MyAppProps) {
   return (
     <RecoilRoot>
       <AnimatePresence>
@@ -17,5 +21,3 @@ function MyApp({ Component, pageProps }) {
     </RecoilRoot>
   );
 }
-
-export default MyApp;

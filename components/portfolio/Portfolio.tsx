@@ -1,7 +1,27 @@
-import PortfolioCard from "./PortfolioCard";
-import portfolioData from "./portfolioData";
+import { useEffect } from "react";
+import { useRecoilState } from "recoil";
+import { selectedCategoryState } from "../../recoil/portfolioState";
+import FilteredPortfolio from "./FilteredPortfolio";
+
+const categories = [
+  "All Categories",
+  "UI Design",
+  "Web Development",
+  "Video Production",
+  "WordPress",
+];
 
 export default function Portfolio() {
+  const [selectedCategory, setSelectedCategory] = useRecoilState(
+    selectedCategoryState
+  );
+
+  useEffect(() => {
+    if (selectedCategory === "All Categories") {
+      setSelectedCategory("All Categories");
+    }
+  }, []);
+
   return (
     <section className="mt-2 md:mt-10 text-white w-full">
       <div className="flex flex-col items-center justify-center p-4 xl:px-40">
@@ -11,29 +31,27 @@ export default function Portfolio() {
           design, and multimedia production.
         </p>
       </div>
-      <div className="flex justify-center font-normal text-center">
-        <ul className="flex flex-wrap text-start gap-6 ">
-          <li className="text-orange-400 hover:cursor-pointer">
-            All Categories
-          </li>
-          <li className="hover:text-orange-400 hover:cursor-pointer">
-            UI Design
-          </li>
-          <li className="hover:text-orange-400 hover:cursor-pointer">
-            Web Development
-          </li>
-          <li className="hover:text-orange-400 hover:cursor-pointer">
-            Video Production
-          </li>
-          <li className="hover:text-orange-400 hover:cursor-pointer">
-            WordPress
-          </li>
-        </ul>
+
+      <div className="flex justify-center font-normal text-center pb-4">
+        <div>
+          <ul className="flex flex-wrap text-start gap-6">
+            {categories.map((cat) => (
+              <li
+                key={cat}
+                className={`${
+                  selectedCategory === cat ? "text-orange-400" : ""
+                } hover:text-orange-400 hover:cursor-pointer`}
+                onClick={() => setSelectedCategory(cat)}
+              >
+                {cat}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-        {portfolioData.map((item) => (
-          <PortfolioCard key={item.id} image={item.image} />
-        ))}
+        <FilteredPortfolio />
       </div>
     </section>
   );
