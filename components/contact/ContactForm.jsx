@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CustomButton from "../reusable/CustomButton"; // Rename the imported component
+import CustomButton from "../../reusable/CustomButton"; // Rename the imported component
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({

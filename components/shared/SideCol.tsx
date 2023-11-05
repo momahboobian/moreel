@@ -4,9 +4,9 @@ import socialLinks from "./socialLinks";
 import extraSkills from "./extraSkills";
 import Image from "next/image";
 import bannerImage from "../../public/images/MoReel.jpg";
-import SocialIcons from "../reusable/SocialIcons";
-import SkillsCloud from "../reusable/skillsCloud";
-import CustomButton from "../reusable/CustomButton";
+import SocialIcons from "../../reusable/SocialIcons";
+import SkillsCloud from "../../reusable/skillsCloud";
+import CustomButton from "../../reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
 export default function SideCol() {

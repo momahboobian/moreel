@@ -2,7 +2,7 @@ import { useRecoilState } from "recoil";
 import { heroState } from "../../recoil/heroState";
 import Image from "next/image";
 import bannerImage from "../../public/images/gui-yellow.png";
-import CustomButton from "../reusable/CustomButton";
+import CustomButton from "../../reusable/CustomButton";
 import Link from "next/link";
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <>
       <div className={`${isModalOpen ? "filter blur-[5px]" : ""}`}>
-        <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-2 bg-secondary-dark text-white rounded-2xl  mx-auto ">
+        <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-2 bg-secondary-dark text-white rounded-2xl mx-auto ">
           <div className="w-full md:w-1/2 text-left p-8">
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold whitespace-pre-line">
               Crafted Inspirations,
@@ -69,7 +69,7 @@ export default function Hero() {
                 agile methodologies to deliver high-quality software and visual
                 solutions...
               </p>
-              <Link href="/about-me">
+              <Link href="/about">
                 <CustomButton title={"Read More ->"} />
               </Link>
             </div>
