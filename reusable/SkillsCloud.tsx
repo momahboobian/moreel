@@ -4,7 +4,7 @@ import skills from "@/data/skills";
 
 export default function SkillsCloud() {
   const animatedSkills = useRecoilValue(shuffledSkillsSelector);
-  const setSkillsState = useSetRecoilState(skillsState);
+  const setSkillsState = useSetRecoilState<string[]>(skillsState);
 
   // Initialize Recoil state with the skills array
   setSkillsState(skills);

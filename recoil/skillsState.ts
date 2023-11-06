@@ -1,6 +1,5 @@
 import { atom, selector } from "recoil";
 
-// Function to shuffle an array randomly
 function shuffleArray(array) {
   let currentIndex = array.length;
   let randomIndex, tempValue;
@@ -17,7 +16,8 @@ function shuffleArray(array) {
   return array;
 }
 
-export const skillsState = atom({
+// Update the atom with the correct type
+export const skillsState = atom<string[]>({
   key: "skillsState",
   default: [],
 });
