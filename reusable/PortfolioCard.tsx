@@ -3,7 +3,6 @@ import Image from "next/image";
 interface CustomPortfolioProps {
   image: string;
   alt: string;
-  tags?: string;
 }
 
 export default function PortfolioCard({ image, alt }: CustomPortfolioProps) {

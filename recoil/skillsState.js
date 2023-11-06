@@ -1,5 +1,21 @@
 import { atom, selector } from "recoil";
-import { shuffleArray } from "../reusable/skillsCloud";
+
+// Function to shuffle an array randomly
+function shuffleArray(array) {
+  let currentIndex = array.length;
+  let randomIndex, tempValue;
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    tempValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = tempValue;
+  }
+
+  return array;
+}
 
 export const skillsState = atom({
   key: "skillsState",

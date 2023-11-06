@@ -1,14 +1,20 @@
-import { useEffect } from "react";
-import { useRecoilState } from "recoil";
-import { selectedCategoryState } from "../../recoil/portfolioState";
-import FilteredPortfolio from "./FilteredPortfolio";
+import { useRecoilState, useRecoilValue } from "recoil";
+import {
+  selectedCategoryState,
+  filteredPortfolioDataState,
+} from "@/recoil/portfolioState";
+import PortfolioCard from "@/reusable/PortfolioCard";
 
-const categories = [
-  "All Categories",
-  "UI Design",
-  "Web Development",
-  "Video Production",
-  "WordPress",
+interface Category {
+  name: string;
+}
+
+const categories: Category[] = [
+  { name: "All Categories" },
+  { name: "UI Design" },
+  { name: "Web Development" },
+  { name: "Video Production" },
+  { name: "WordPress" },
 ];
 
 export default function Portfolio() {
@@ -16,11 +22,11 @@ export default function Portfolio() {
     selectedCategoryState
   );
 
-  useEffect(() => {
-    if (selectedCategory === "All Categories") {
-      setSelectedCategory("All Categories");
-    }
-  }, []);
+  const handleCategoryClick = (cat: string) => {
+    setSelectedCategory(cat);
+  };
+
+  const filteredPortfolioData = useRecoilValue(filteredPortfolioDataState);
 
   return (
     <section className="mt-2 md:mt-10 text-white w-full">
@@ -37,13 +43,13 @@ export default function Portfolio() {
           <ul className="flex flex-wrap text-start gap-6">
             {categories.map((cat) => (
               <li
-                key={cat}
+                key={cat.name}
                 className={`${
-                  selectedCategory === cat ? "text-orange-400" : ""
+                  selectedCategory === cat.name ? "text-orange-400" : ""
                 } hover:text-orange-400 hover:cursor-pointer`}
-                onClick={() => setSelectedCategory(cat)}
+                onClick={() => handleCategoryClick(cat.name)}
               >
-                {cat}
+                {cat.name}
               </li>
             ))}
           </ul>
@@ -51,7 +57,9 @@ export default function Portfolio() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-        <FilteredPortfolio />
+        {filteredPortfolioData.map((item) => (
+          <PortfolioCard key={item.id} image={item.image} alt={item.alt} />
+        ))}{" "}
       </div>
     </section>
   );

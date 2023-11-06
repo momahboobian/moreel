@@ -1,22 +1,14 @@
-import { useEffect } from "react";
 import Link from "next/link";
-import socialLinks from "./socialLinks";
-import extraSkills from "./extraSkills";
 import Image from "next/image";
-import bannerImage from "../../public/images/MoReel.jpg";
-import SocialIcons from "../../reusable/SocialIcons";
-import SkillsCloud from "../../reusable/skillsCloud";
-import CustomButton from "../../reusable/CustomButton";
+import extraSkills from "@/data/extraSkills";
+import bannerImage from "@/public/images/MoReel.jpg";
+import SocialIcons from "@/reusable/SocialIcons";
+
+import SkillsCloud from "@/reusable/skillsCloud";
+import CustomButton from "@/reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
 export default function SideCol() {
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // You no longer need to call animateSkills here
-    }, 2000);
-
-    return () => clearInterval(intervalId);
-  }, []);
   return (
     <section className="px-4 sm:px-2 sm:pt-2 lg:pt-4 ">
       <div className="flex flex-col sm:justify-between mt-2 md:ml-3 md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl pb-36">
@@ -37,7 +29,7 @@ export default function SideCol() {
         </div>
 
         <div className="flex items-center justify-center ">
-          <SocialIcons socialLinks={socialLinks} />
+          <SocialIcons />
         </div>
 
         <hr className="my-4 border-gray-300 opacity-80" />

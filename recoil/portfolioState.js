@@ -1,5 +1,5 @@
 import { atom, selector } from "recoil";
-import portfolioData from "../components/portfolio/portfolioData";
+import portfolioData from "@data/portfolioData";
 
 export const selectedCategoryState = atom({
   key: "selectedCategoryState",
