@@ -10,8 +10,8 @@ import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
 export default function SideCol() {
   return (
-    <section className="px-4 sm:px-2 sm:pt-2 lg:pt-4 ">
-      <div className="flex flex-col sm:justify-between mt-2 md:ml-3 md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl pb-36">
+    <section className="">
+      <div className="flex flex-col sm:justify-between p-6 space-y-6 bg-secondary-dark text-white rounded-2xl pb-36">
         <div className="flex flex-col items-center w-full text-left space-y-5">
           <div className="relative w-32 sm:w-48 h-32 sm:h-48 overflow-hidden rounded-full ">
             <Image
@@ -49,7 +49,7 @@ export default function SideCol() {
         <hr className="my-6 border-gray-300 opacity-80" />
         <div className=" ">
           <h3 className="text-xl pb-2">Skills</h3>
-          {/* <SkillsCloud /> */}
+          <SkillsCloud />
         </div>
 
         <hr className="my-6 border-gray-300 opacity-80" />
