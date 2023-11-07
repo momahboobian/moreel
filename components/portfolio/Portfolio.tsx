@@ -1,9 +1,7 @@
-import { useRecoilState, useRecoilValue } from "recoil";
-import {
-  selectedCategoryState,
-  filteredPortfolioDataState,
-} from "@/recoil/portfolioState";
+import { useRecoilState } from "recoil";
+import { selectedCategoryState } from "@/recoil/categoriesState";
 import PortfolioCard from "@/reusable/PortfolioCard";
+import portfolioData from "@/data/portfolioData";
 
 interface Category {
   name: string;
@@ -22,11 +20,14 @@ export default function Portfolio() {
     selectedCategoryState
   );
 
-  const handleCategoryClick = (cat: string) => {
-    setSelectedCategory(cat);
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
   };
 
-  const filteredPortfolioData = useRecoilValue(filteredPortfolioDataState);
+  const filteredPortfolioData =
+    selectedCategory === "All Categories"
+      ? portfolioData
+      : portfolioData.filter((item) => item.tags.includes(selectedCategory));
 
   return (
     <section className="mt-2 md:mt-10 text-white w-full">
@@ -59,7 +60,7 @@ export default function Portfolio() {
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {filteredPortfolioData.map((item) => (
           <PortfolioCard key={item.id} image={item.image} alt={item.alt} />
-        ))}{" "}
+        ))}
       </div>
     </section>
   );

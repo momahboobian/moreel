@@ -15,7 +15,7 @@ export default function Home() {
           <SideCol />
         </div>
         <section className="max-w-6xl p-4 sm:pt-2 lg:pt-4 sm:p-0">
-          <Hero />
+          {/* <Hero /> */}
 
           <Expertise />
 

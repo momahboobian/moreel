@@ -19,6 +19,7 @@ export default function SideCol() {
               alt="Profile image"
               width={500}
               height={500}
+              priority={true}
             />
           </div>
           <h2 className="text-xl md:text-2xl lg:text-3xl">Mo Mahboobian</h2>{" "}
@@ -56,7 +57,10 @@ export default function SideCol() {
           <h3 className="text-xl">Extra Skills</h3>
           <ul className="list-none text-orange-400 space-y-1">
             {extraSkills.map((skill, index) => (
-              <li key={index} className="text-gray-500 flex items-center">
+              <li
+                key={index}
+                className="text-gray-500 flex items-center whitespace-pre"
+              >
                 <AiOutlineBlock size={24} className="text-orange-400 mr-2" />
                 {skill}
               </li>
