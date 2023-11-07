@@ -1,25 +1,17 @@
-import { useEffect } from "react";
 import Link from "next/link";
-import socialLinks from "./socialLinks";
-import extraSkills from "./extraSkills";
 import Image from "next/image";
-import bannerImage from "../../public/images/MoReel.jpg";
-import SocialIcons from "../reusable/SocialIcons";
-import SkillsCloud from "../reusable/skillsCloud";
-import CustomButton from "../reusable/CustomButton";
+import extraSkills from "@/data/extraSkills";
+import bannerImage from "@/public/images/MoReel.jpg";
+import SocialIcons from "@components/reusable/SocialIcons";
+
+import SkillsCloud from "@components/reusable/SkillsCloud";
+import CustomButton from "@components/reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
 export default function SideCol() {
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // You no longer need to call animateSkills here
-    }, 2000);
-
-    return () => clearInterval(intervalId);
-  }, []);
   return (
-    <section className="px-4 sm:px-2 sm:pt-2 lg:pt-4 ">
-      <div className="flex flex-col sm:justify-between mt-2 md:ml-3 md:mt-2 p-6 space-y-6 bg-secondary-dark text-white rounded-2xl pb-36">
+    <section className="">
+      <div className="flex flex-col sm:justify-between p-6 space-y-6 bg-secondary-dark text-white rounded-2xl pb-36">
         <div className="flex flex-col items-center w-full text-left space-y-5">
           <div className="relative w-32 sm:w-48 h-32 sm:h-48 overflow-hidden rounded-full ">
             <Image
@@ -27,6 +19,7 @@ export default function SideCol() {
               alt="Profile image"
               width={500}
               height={500}
+              priority={true}
             />
           </div>
           <h2 className="text-xl md:text-2xl lg:text-3xl">Mo Mahboobian</h2>{" "}
@@ -37,7 +30,7 @@ export default function SideCol() {
         </div>
 
         <div className="flex items-center justify-center ">
-          <SocialIcons socialLinks={socialLinks} />
+          <SocialIcons />
         </div>
 
         <hr className="my-4 border-gray-300 opacity-80" />
@@ -64,7 +57,10 @@ export default function SideCol() {
           <h3 className="text-xl">Extra Skills</h3>
           <ul className="list-none text-orange-400 space-y-1">
             {extraSkills.map((skill, index) => (
-              <li key={index} className="text-gray-500 flex items-center">
+              <li
+                key={index}
+                className="text-gray-500 flex items-center whitespace-pre"
+              >
                 <AiOutlineBlock size={24} className="text-orange-400 mr-2" />
                 {skill}
               </li>

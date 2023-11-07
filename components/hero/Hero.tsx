@@ -1,12 +1,12 @@
-import { useRecoilState } from "recoil";
-import { modalState } from "../../recoil/modalState";
-import Image from "next/image";
-import bannerImage from "../../public/images/gui-yellow.png";
-import CustomButton from "../reusable/CustomButton";
 import Link from "next/link";
+import Image from "next/image";
+import { useRecoilState } from "recoil";
+import { heroState } from "@/recoil/heroState";
+import bannerImage from "@/public/images/gui-yellow.png";
+import CustomButton from "@components/reusable/CustomButton";
 
 export default function Hero() {
-  const [isModalOpen, setIsModalOpen] = useRecoilState(modalState);
+  const [isModalOpen, setIsModalOpen] = useRecoilState(heroState);
 
   const handleButtonClick = () => {
     setIsModalOpen(true);
@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <>
       <div className={`${isModalOpen ? "filter blur-[5px]" : ""}`}>
-        <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-2 bg-secondary-dark text-white rounded-2xl  mx-auto ">
+        <section className="flex flex-col md:flex-row justify-between items-center bg-secondary-dark text-white rounded-2xl mx-auto ">
           <div className="w-full md:w-1/2 text-left p-8">
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold whitespace-pre-line">
               Crafted Inspirations,
@@ -28,20 +28,22 @@ export default function Hero() {
               <br />
               Innovation.
             </h1>
+
             <p className="font-normal text-sm md:text-base lg:text-lg text-gray-500 py-6 max-w-xl  ">
               Product Designer, Software Developer, and Content Creator, I
               specialize in responsive design and visual development, creating
               immersive and compelling digital experiences.
             </p>
-            <CustomButton title={"About Me ->"} onClick={handleButtonClick} />
 
-            {/* <div className="p-20 bg-slate-400">Hi</div> */}
+            <CustomButton title={"About Me ->"} onClick={handleButtonClick} />
           </div>
+
           <div className="hidden w-full md:block md:w-1/2 lg:w-1/3 mt-8 md:mt-0 ">
             <Image
               src={bannerImage}
               alt="Data web banner image"
               className="max-w-full h-auto"
+              priority={true}
             />
           </div>
         </section>
@@ -69,7 +71,8 @@ export default function Hero() {
                 agile methodologies to deliver high-quality software and visual
                 solutions...
               </p>
-              <Link href="/about-me">
+
+              <Link href="/about">
                 <CustomButton title={"Read More ->"} />
               </Link>
             </div>

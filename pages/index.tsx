@@ -9,12 +9,12 @@ import Footer from "../components/shared/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-start min-h-screen">
-      <section className="flex flex-col sm:flex-row justify-between items-start gap-1">
-        <div className="max-w-md">
+    <main className="min-h-screen">
+      <section className="flex flex-col justify-center sm:flex-row gap-1">
+        <div className="w-screen sm:max-w-md p-3">
           <SideCol />
         </div>
-        <section className="max-w-6xl p-4 sm:pt-2 lg:pt-4 sm:p-0">
+        <section className="max-w-6xl p-3">
           <Hero />
 
           <Expertise />

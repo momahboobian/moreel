@@ -1,4 +1,3 @@
-
 export default function about() {
-  return <div>page</div>;
+  return <div>about</div>;
 }
