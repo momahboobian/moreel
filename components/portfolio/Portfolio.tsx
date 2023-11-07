@@ -62,7 +62,13 @@ export default function Portfolio() {
 
       <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {filteredPortfolioData.map((item) => (
-          <PortfolioCard key={item.id} image={item.image} alt={item.alt} />
+          <PortfolioCard
+            key={item.id}
+            image={item.image}
+            alt={item.alt}
+            shortDesc={item.shortDesc}
+            tags={item.tags}
+          />
         ))}
       </div>
     </section>
