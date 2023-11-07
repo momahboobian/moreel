@@ -2,10 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import extraSkills from "@/data/extraSkills";
 import bannerImage from "@/public/images/MoReel.jpg";
-import SocialIcons from "@/reusable/SocialIcons";
+import SocialIcons from "@components/reusable/SocialIcons";
 
-import SkillsCloud from "@/reusable/SkillsCloud";
-import CustomButton from "@/reusable/CustomButton";
+import SkillsCloud from "@components/reusable/SkillsCloud";
+import CustomButton from "@components/reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
 export default function SideCol() {

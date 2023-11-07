@@ -1,6 +1,6 @@
 import { useRecoilState } from "recoil";
 import { selectedCategoryState } from "@/recoil/categoriesState";
-import PortfolioCard from "@/reusable/PortfolioCard";
+import PortfolioCard from "@components/reusable/PortfolioCard";
 import portfolioData from "@/data/portfolioData";
 
 interface Category {

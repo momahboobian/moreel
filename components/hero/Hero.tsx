@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRecoilState } from "recoil";
 import { heroState } from "@/recoil/heroState";
 import bannerImage from "@/public/images/gui-yellow.png";
-import CustomButton from "@/reusable/CustomButton";
+import CustomButton from "@components/reusable/CustomButton";
 
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useRecoilState(heroState);

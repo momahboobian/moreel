@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CustomCard from "@/reusable/CustomCard";
+import CustomCard from "@components/reusable/CustomCard";
 
 export default function Expertise() {
   return (
@@ -18,81 +18,81 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="m-6 w-full h-auto "
+              className="w-full h-auto"
               src="/images/svg/coding.svg"
               alt="Web-Development"
-              width={90}
-              height={90}
+              width={150}
+              height={150}
             />
           }
-          title={"Web Development"}
-          desc={"Blog, E-Commerce"}
+          title="Web Development"
+          desc="Blog, E-Commerce"
         />
 
         <CustomCard
           icon={
             <Image
-              className="m-4 w-full h-auto"
+              className="w-full h-auto"
               src="/images/svg/illustration.svg"
               alt="UI-UX-Design"
-              width={88}
-              height={88}
+              width={100}
+              height={100}
             />
           }
-          title={"UI-UX Design"}
-          desc={"User Interface, User Experience"}
+          title="UI-UX Design"
+          desc="User Interface, User Experience"
         />
         <CustomCard
           icon={
             <Image
-              className="m-5 w-full h-auto"
+              className="w-full h-auto"
               src="/images/svg/audio.svg"
               alt="Video-Production"
-              width={90}
-              height={90}
+              width={100}
+              height={100}
             />
           }
-          title={"Video Production"}
-          desc={"Vide & Audio Multimedia showcase"}
+          title="Video Production"
+          desc="Multimedia Video & Audio"
         />
         <CustomCard
           icon={
             <Image
-              className="m-4 w-full h-auto"
+              className=" w-full h-auto"
               src="/images/svg/mobile.svg"
               alt="Mobile-Application"
               width={100}
               height={100}
             />
           }
-          title={"Mobile Application"}
-          desc={"Smartphones & Tablet App"}
+          title="Mobile Application"
+          desc="Smartphones & Tablet App"
         />
         <CustomCard
           icon={
             <Image
-              className="m-4 w-full h-auto"
+              className="w-full h-auto"
               src="/images/svg/game-development.svg"
               alt="Game-Development"
-              width={90}
-              height={90}
+              width={100}
+              height={100}
             />
           }
-          title={"Game Development"}
-          desc={"2D & 3d Games"}
+          title="Game Development"
+          desc="2D & 3d Games"
         />
         <CustomCard
           icon={
             <Image
-              className="m-4 w-full h-auto"
+              className="w-full h-auto"
               src="/images/svg/photographer.svg"
               alt="Photographer"
-              width={90}
-              height={90}
+              width={100}
+              height={100}
             />
           }
-          title={"Photography"}
-          desc={"Image & Portrait"}
+          title="Photography"
+          desc="Portrait & Landscape"
         />
       </div>
     </section>
