@@ -13,11 +13,12 @@ export default function Expertise() {
         </p>
       </div>
 
+      {/* sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         <CustomCard
           icon={
             <Image
-              className="m-6 "
+              className="m-6 w-full h-auto "
               src="/images/svg/coding.svg"
               alt="Web-Development"
               width={90}
@@ -31,7 +32,7 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="m-4"
+              className="m-4 w-full h-auto"
               src="/images/svg/illustration.svg"
               alt="UI-UX-Design"
               width={88}
@@ -44,7 +45,7 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="m-5"
+              className="m-5 w-full h-auto"
               src="/images/svg/audio.svg"
               alt="Video-Production"
               width={90}
@@ -57,7 +58,7 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="m-4"
+              className="m-4 w-full h-auto"
               src="/images/svg/mobile.svg"
               alt="Mobile-Application"
               width={100}
@@ -70,7 +71,7 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="m-4"
+              className="m-4 w-full h-auto"
               src="/images/svg/game-development.svg"
               alt="Game-Development"
               width={90}
@@ -83,7 +84,7 @@ export default function Expertise() {
         <CustomCard
           icon={
             <Image
-              className="m-4"
+              className="m-4 w-full h-auto"
               src="/images/svg/photographer.svg"
               alt="Photographer"
               width={90}

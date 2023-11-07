@@ -4,7 +4,7 @@ import extraSkills from "@/data/extraSkills";
 import bannerImage from "@/public/images/MoReel.jpg";
 import SocialIcons from "@/reusable/SocialIcons";
 
-import SkillsCloud from "@/reusable/skillsCloud";
+import SkillsCloud from "@/reusable/SkillsCloud";
 import CustomButton from "@/reusable/CustomButton";
 import { AiOutlineBlock, AiOutlineDownload } from "react-icons/ai";
 
@@ -48,7 +48,7 @@ export default function SideCol() {
         <hr className="my-6 border-gray-300 opacity-80" />
         <div className=" ">
           <h3 className="text-xl pb-2">Skills</h3>
-          <SkillsCloud />
+          {/* <SkillsCloud /> */}
         </div>
 
         <hr className="my-6 border-gray-300 opacity-80" />
