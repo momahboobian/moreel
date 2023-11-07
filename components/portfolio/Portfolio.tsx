@@ -41,16 +41,19 @@ export default function Portfolio() {
 
       <div className="flex justify-center font-normal text-center pb-4">
         <div>
-          <ul className="flex flex-wrap text-start gap-6">
+          <ul className="flex items-center flex-wrap text-start gap-6">
             {categories.map((cat) => (
               <li
                 key={cat.name}
                 className={`${
                   selectedCategory === cat.name ? "text-orange-400" : ""
-                } hover:text-orange-400 hover:cursor-pointer`}
+                }`}
                 onClick={() => handleCategoryClick(cat.name)}
               >
-                {cat.name}
+                <div className="relative ring-offset-1 p-2 rounded-md hover:bg-gradient-to-r from-orange-500 to-orange-300 overflow-hidden group hover:ring-1 hover:ring-offset-1 hover:ring-orange-400 hover:text-black transition-all ease-out duration-300 whitespace-pre cursor-pointer">
+                  {cat.name}
+                  <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                </div>
               </li>
             ))}
           </ul>
