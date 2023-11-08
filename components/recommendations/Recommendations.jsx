@@ -7,18 +7,18 @@ export default function Recommendations() {
       <div className="flex flex-col items-center p-4 sm:px-32 xl:px-48 2xl:px-60">
         <h4 className="text-4xl font-semibold">Recommendations</h4>
         <p className="font-normal text-base text-center text-gray-500 p-4">
-          Read what others have to say about my work and professional character
-          in these recommendations.
+          Discover what others have to say about my work and professional
+          character in these recommendations.
         </p>
       </div>
 
       <div className="flex items-start text-left font-normal">
         <div className="max-w-full overflow-x-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="flex space-x-4">
             {recommendationsData.map((recommendation, index) => (
               <article
                 key={index}
-                className="max-w-full bg-white rounded-lg shadow-md p-4"
+                className="max-w-full bg-white rounded-lg shadow-md p-4 min-w-[22rem]"
               >
                 {/* Rating */}
                 <div className="flex items-center mb-2">
@@ -30,7 +30,7 @@ export default function Recommendations() {
                 </div>
 
                 {/* Review */}
-                <div className="mb-4 text-gray-500 max-h-36 overflow-y-auto">
+                <div className="mb-4 text-gray-500 max-h-48 overflow-y-auto">
                   <p className="font-semibold">
                     {recommendation.recommendation}
                   </p>
@@ -38,12 +38,12 @@ export default function Recommendations() {
 
                 {/* Avatar */}
                 <div className="flex items-center text-gray-500">
-                  <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-2">
+                  <div className="w-20 h-20 bg-gray-300 rounded-full overflow-hidden mr-2">
                     <Image
                       src={recommendation.avatar}
                       alt={recommendation.name}
-                      width={48}
-                      height={48}
+                      width={80}
+                      height={80}
                     />
                   </div>
                   <div>
