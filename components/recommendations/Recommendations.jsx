@@ -1,4 +1,5 @@
 import Image from "next/image";
+import recommendationsData from "@/data/recommendationsData";
 
 export default function Recommendations() {
   return (
@@ -10,109 +11,51 @@ export default function Recommendations() {
           in these recommendations.
         </p>
       </div>
+      <div className="flex items-center mb-2">
+        <span className="text-yellow-400 text-xl">
+          &#9733; &#9733; &#9733; &#9733; &#9733;
+        </span>
+      </div>
+
       <div className="flex justify-center font-normal text-center">
-        <div className="grid grid-cols-3 gap-4 ">
-          {/* Recommendation Card 1 */}
-          <article className="max-w-full bg-white rounded-lg shadow-md p-4">
-            {/* Rating */}
-            <div className="flex items-center mb-2">
-              <span className="text-yellow-400 text-xl">
-                &#9733; &#9733; &#9733; &#9733; &#9733;
-              </span>
-            </div>
-            {/* Review */}
-            <div className="mb-4">
-              <p className="font-semibold">Great Quality!</p>
-              <p className="text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-                nulla diam in ac dictum a urna viverra morbi. Morbi donec
-                amet....
-              </p>
-            </div>
-            {/* Avatar */}
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-2">
-                {/* Insert the avatar image here */}
-                <Image
-                  src=""
-                  alt="Avatar"
-                  className="w-full h-full object-cover"
-                />
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          {recommendationsData.map((recommendation, index) => (
+            <article
+              key={index}
+              className="max-w-full bg-white rounded-lg shadow-md p-4"
+            >
+              {/* Rating */}
+              <div className="flex items-center mb-2">
+                <span className="text-yellow-400 text-xl">
+                  {Array.from({ length: recommendation.rating }, (_, i) => {
+                    <span key={i}>&#9733;</span>;
+                  })}
+                </span>
               </div>
-              <div>
-                <p className="font-semibold">John Doe</p>
-                <p className="text-gray-500">Title</p>
-              </div>
-            </div>
-          </article>
 
-          {/* Recommendation Card 2 (Repeat similar structure for each card) */}
-          <article className="max-w-full bg-white rounded-lg shadow-md p-4">
-            {/* Rating */}
-            <div className="flex items-center mb-2">
-              <span className="text-yellow-400 text-xl">
-                &#9733; &#9733; &#9733; &#9733; &#9733;
-              </span>
-            </div>
-            {/* Review */}
-            <div className="mb-4">
-              <p className="font-semibold">Great Quality!</p>
-              <p className="text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-                nulla diam in ac dictum a urna viverra morbi. Morbi donec
-                amet....
-              </p>
-            </div>
-            {/* Avatar */}
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-2">
-                {/* Insert the avatar image here */}
-                <Image
-                  src=""
-                  alt="Avatar"
-                  className="w-full h-full object-cover"
-                />
+              {/* Review */}
+              <div className="mb-4 text-gray-500">
+                <p className="font-semibold">{recommendation.review}</p>
               </div>
-              <div>
-                <p className="font-semibold">Jane Smith</p>
-                <p className="text-gray-500">Title</p>
-              </div>
-            </div>
-          </article>
 
-          {/* Recommendation Card 3 (Repeat similar structure for each card) */}
-          <article className="max-w-full bg-white rounded-lg shadow-md p-4">
-            {/* Rating */}
-            <div className="flex items-center mb-2">
-              <span className="text-yellow-400 text-xl">
-                &#9733; &#9733; &#9733; &#9733; &#9733;
-              </span>
-            </div>
-            {/* Review */}
-            <div className="mb-4">
-              <p className="font-semibold">Great Quality!</p>
-              <p className="text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-                nulla diam in ac dictum a urna viverra morbi. Morbi donec
-                amet....
-              </p>
-            </div>
-            {/* Avatar */}
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-2">
-                {/* Insert the avatar image here */}
-                <Image
-                  src=""
-                  alt="Avatar"
-                  className="w-full h-full object-cover"
-                />
+              {/* Avatar */}
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gray-300 round-full overflow-hidden mr-2">
+                  <Image
+                    className="w-full h-full"
+                    src={recommendation.avatar}
+                    alt={recommendation.name}
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold">{recommendation.name}</p>
+                  <p className="text-gray-500">{recommendation.title}</p>
+                </div>
               </div>
-              <div>
-                <p className="font-semibold">Alice Johnson</p>
-                <p className="text-gray-500">Title</p>
-              </div>
-            </div>
-          </article>
+            </article>
+          ))}
         </div>
       </div>
     </section>

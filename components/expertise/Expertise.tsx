@@ -13,7 +13,6 @@ export default function Expertise() {
         </p>
       </div>
 
-      {/* sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         <CustomCard
           icon={

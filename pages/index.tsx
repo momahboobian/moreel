@@ -20,9 +20,9 @@ export default function Home() {
           <Expertise />
 
           <Portfolio />
-          {/* 
 
           <Recommendations />
+          {/* 
 
           <Contact /> */}
         </div>
