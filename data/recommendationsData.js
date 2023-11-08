@@ -20,7 +20,7 @@ const recommendationsData = [
   },
   {
     rating: 4,
-    review: "-------",
+    review: "Review",
     recommendation: "Great Quality!",
     avatar: "/images/rec-img/Amy_Mead.jpeg",
     name: "Amy Mead",
@@ -28,7 +28,7 @@ const recommendationsData = [
   },
   {
     rating: 4,
-    review: "-------",
+    review: "Review",
     recommendation: "Great Quality!",
     avatar: "/images/rec-img/Karen_Fornos_Klein.jpeg",
     name: "Karen Fornos Klein",
@@ -36,7 +36,7 @@ const recommendationsData = [
   },
   {
     rating: 5,
-    review: "-------",
+    review: "Review",
     recommendation: "Highly Recommended!",
     avatar: "/images/rec-img/Halden Beckwith.jpeg",
     name: "Halden Beckwith",
@@ -44,7 +44,7 @@ const recommendationsData = [
   },
   {
     rating: 5,
-    review: "-------",
+    review: "Review",
     recommendation: "Excellent Work!",
     avatar: "/images/rec-img/Mahmoud_Mushatat.jpeg",
     name: "Mahmoud Mushatat",
@@ -52,7 +52,7 @@ const recommendationsData = [
   },
   {
     rating: 5,
-    review: "-------",
+    review: "Review",
     recommendation: "Great Quality!",
     avatar: "/images/rec-img/Behzad_Bolour.jpeg",
     name: "Behzad Bolour",
