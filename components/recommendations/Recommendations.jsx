@@ -11,51 +11,53 @@ export default function Recommendations() {
           in these recommendations.
         </p>
       </div>
+
       <div className="flex items-center mb-2">
         <span className="text-yellow-400 text-xl">
           &#9733; &#9733; &#9733; &#9733; &#9733;
         </span>
       </div>
 
-      <div className="flex justify-center font-normal text-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {recommendationsData.map((recommendation, index) => (
-            <article
-              key={index}
-              className="max-w-full bg-white rounded-lg shadow-md p-4"
-            >
-              {/* Rating */}
-              <div className="flex items-center mb-2">
-                <span className="text-yellow-400 text-xl">
-                  {Array.from({ length: recommendation.rating }, (_, i) => {
-                    <span key={i}>&#9733;</span>;
-                  })}
-                </span>
-              </div>
-
-              {/* Review (with scrolling) */}
-              <div className="mb-4 text-gray-500 max-h-36 overflow-y-auto">
-                <p className="font-semibold">{recommendation.review}</p>
-              </div>
-
-              {/* Avatar */}
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 round-full overflow-hidden mr-2">
-                  <Image
-                    className="w-full h-full"
-                    src={recommendation.avatar}
-                    alt={recommendation.name}
-                    width={150}
-                    height={150}
-                  />
+      <div className="flex items-start text-left font-normal">
+        <div className="max-w-full overflow-x-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {recommendationsData.map((recommendation, index) => (
+              <article
+                key={index}
+                className="max-w-full bg-white rounded-lg shadow-md p-4"
+              >
+                {/* Rating */}
+                <div className="flex items-center mb-2">
+                  <span className="text-yellow-400 text-xl">
+                    {Array.from({ length: recommendation.rating }, (_, i) => {
+                      <span key={i}>&#9733;</span>;
+                    })}
+                  </span>
                 </div>
-                <div>
-                  <p className="font-semibold">{recommendation.name}</p>
-                  <p className="text-gray-500">{recommendation.title}</p>
+
+                {/* Review */}
+                <div className="mb-4 text-gray-500 max-h-36 overflow-y-auto">
+                  <p className="font-semibold">{recommendation.review}</p>
                 </div>
-              </div>
-            </article>
-          ))}
+
+                {/* Avatar */}
+                <div className="flex items-center text-gray-500">
+                  <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-2">
+                    <Image
+                      src={recommendation.avatar}
+                      alt={recommendation.name}
+                      width={48}
+                      height={48}
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold">{recommendation.name}</p>
+                    <p className="text-gray-500">{recommendation.title}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

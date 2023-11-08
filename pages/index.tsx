@@ -11,9 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <section className="flex flex-col justify-center sm:flex-row gap-1">
-        <div className="w-screen sm:max-w-md p-3">
-          <SideCol />
-        </div>
+        <div className="w-screen sm:max-w-md p-3">{/* <SideCol /> */}</div>
         <div className="max-w-6xl p-3">
           <Hero />
 
