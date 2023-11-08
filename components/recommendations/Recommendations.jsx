@@ -12,12 +12,6 @@ export default function Recommendations() {
         </p>
       </div>
 
-      <div className="flex items-center mb-2">
-        <span className="text-yellow-400 text-xl">
-          &#9733; &#9733; &#9733; &#9733; &#9733;
-        </span>
-      </div>
-
       <div className="flex items-start text-left font-normal">
         <div className="max-w-full overflow-x-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -28,16 +22,18 @@ export default function Recommendations() {
               >
                 {/* Rating */}
                 <div className="flex items-center mb-2">
-                  <span className="text-yellow-400 text-xl">
-                    {Array.from({ length: recommendation.rating }, (_, i) => {
-                      <span key={i}>&#9733;</span>;
-                    })}
-                  </span>
+                  {Array.from({ length: recommendation.rating }, (_, i) => (
+                    <span key={i} className="text-yellow-400 text-xl">
+                      &#9733;
+                    </span>
+                  ))}
                 </div>
 
                 {/* Review */}
                 <div className="mb-4 text-gray-500 max-h-36 overflow-y-auto">
-                  <p className="font-semibold">{recommendation.review}</p>
+                  <p className="font-semibold">
+                    {recommendation.recommendation}
+                  </p>
                 </div>
 
                 {/* Avatar */}
