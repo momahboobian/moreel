@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import extraSkills from "@/data/extraSkills";
+import extraSkills from "@data/extraSkills";
 import bannerImage from "@/public/images/MoReel.jpg";
 import SocialIcons from "@components/reusable/SocialIcons";
 
