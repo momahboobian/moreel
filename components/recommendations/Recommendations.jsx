@@ -3,7 +3,7 @@ import recommendationsData from "@/data/recommendationsData";
 
 export default function Recommendations() {
   return (
-    <section className="flex flex-col pt-16 mt-5 md:mt-2 text-gray-500 rounded-2xl">
+    <section className="flex flex-col justify-between pt-16 mt-5 md:mt-2 text-gray-500 rounded-2xl">
       <div className="flex flex-col items-center p-4 sm:px-32 xl:px-48 2xl:px-60">
         <h4 className="text-4xl font-semibold">Recommendations</h4>
         <p className="font-normal text-base text-center p-4">
@@ -12,9 +12,9 @@ export default function Recommendations() {
         </p>
       </div>
 
-      <div className="flex items-start text-left font-normal">
-        <div className="max-w-full overflow-x-auto">
-          <div className="flex space-x-4">
+      <div className="max-w-full overflow-x-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex  space-x-4">
             {recommendationsData.map((recommendation, index) => (
               <article
                 key={index}
