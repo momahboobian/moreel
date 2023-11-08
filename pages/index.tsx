@@ -14,7 +14,7 @@ export default function Home() {
         <div className="w-screen sm:max-w-md p-3">
           <SideCol />
         </div>
-        <section className="max-w-6xl p-3">
+        <div className="max-w-6xl p-3">
           <Hero />
 
           <Expertise />
@@ -25,7 +25,7 @@ export default function Home() {
           <Recommendations />
 
           <Contact /> */}
-        </section>
+        </div>
 
         {/* <SideMenu /> */}
       </section>

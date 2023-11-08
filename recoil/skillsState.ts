@@ -36,3 +36,15 @@ export const shuffledSkillsSelector = selector({
     return shuffledSkills;
   },
 });
+
+export const skillPropertiesSelector = selector({
+  key: "skillProperties",
+  get: ({ get }) => {
+    const skills = get(shuffledSkillsSelector);
+    return skills.map((_, index) => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      animationDuration: Math.floor(Math.random() * 2) + 4,
+    }));
+  },
+});
