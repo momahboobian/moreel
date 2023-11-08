@@ -33,8 +33,8 @@ export default function Recommendations() {
                 </span>
               </div>
 
-              {/* Review */}
-              <div className="mb-4 text-gray-500">
+              {/* Review (with scrolling) */}
+              <div className="mb-4 text-gray-500 max-h-36 overflow-y-auto">
                 <p className="font-semibold">{recommendation.review}</p>
               </div>
 
