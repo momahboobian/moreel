@@ -1,11 +1,11 @@
-import Hero from "../components/hero/Hero";
-import SideCol from "../components/shared/SideCol";
-import SideMenu from "../components/shared/SideMenu";
-import Expertise from "../components/expertise/Expertise";
-import Portfolio from "../components/portfolio/Portfolio";
-import Recommendations from "../components/recommendations/Recommendations";
-import Contact from "../components/contact/Contact";
-import Footer from "../components/shared/Footer";
+import Hero from "@/components/hero/Hero";
+import SideCol from "@/components/shared/SideCol";
+import SideMenu from "@/components/shared/SideMenu";
+import Expertise from "@/components/expertise/Expertise";
+import Portfolio from "@/components/portfolio/Portfolio";
+import Recommendations from "@/components/recommendations/Recommendations";
+import Contact from "@/components/contact/Contact";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -14,18 +14,18 @@ export default function Home() {
         <div className="w-screen sm:max-w-md p-3">
           <SideCol />
         </div>
-        <section className="max-w-6xl p-3">
+        <div className="max-w-6xl p-3">
           <Hero />
 
           <Expertise />
 
           <Portfolio />
-          {/* 
 
           <Recommendations />
+          {/* 
 
           <Contact /> */}
-        </section>
+        </div>
 
         {/* <SideMenu /> */}
       </section>
