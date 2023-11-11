@@ -22,6 +22,19 @@ const recommendationsData = [
     rating: 4,
     review: "Review",
     recommendation: "Great Quality!",
+    avatar: "",
+    name: "",
+    title: "",
+  },
+];
+
+export default recommendationsData;
+
+const rec2 = [
+  {
+    rating: 4,
+    review: "Review",
+    recommendation: "Great Quality!",
     avatar: "/images/rec-img/Amy_Mead.jpeg",
     name: "Amy Mead",
     title: "Programme Manager",
@@ -59,5 +72,3 @@ const recommendationsData = [
     title: "Executive Producer & Presenter",
   },
 ];
-
-export default recommendationsData;

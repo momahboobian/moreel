@@ -13,8 +13,8 @@ export default function Recommendations() {
       </div>
 
       <div className="max-w-full overflow-x-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="flex  space-x-4">
+        <div className="grid gap-4">
+          <div className="flex space-x-4">
             {recommendationsData.map((recommendation, index) => (
               <article
                 key={index}
