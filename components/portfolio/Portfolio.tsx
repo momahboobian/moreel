@@ -30,7 +30,7 @@ export default function Portfolio() {
       : portfolioData.filter((item) => item.tags.includes(selectedCategory));
 
   return (
-    <section className="mt-2 md:mt-10 text-white w-full">
+    <section className="mt-4 md:mt-10 text-white w-full">
       <div className="flex flex-col items-center justify-center p-4 xl:px-40">
         <h2 className="text-4xl font-semibold">Portfolio</h2>
         <p className="font-normal text-base text-center text-gray-500 p-4">
