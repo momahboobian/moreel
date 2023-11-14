@@ -60,7 +60,7 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 overflow-y-auto max-h-[77vh]">
         {filteredPortfolioData.map((item) => (
           <PortfolioCard
             key={item.id}

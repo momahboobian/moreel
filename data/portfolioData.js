@@ -54,6 +54,30 @@ const portfolioData = [
     shortDesc: "A WordPress site for...",
     desc: "This WordPress site was created...",
   },
+  {
+    id: 7,
+    image: "/images/card-wp-belsize.jpg",
+    alt: "Description for Image 6",
+    tags: ["Web Development", "WordPress"],
+    shortDesc: "A WordPress site for...",
+    desc: "This WordPress site was created...",
+  },
+  {
+    id: 8,
+    image: "/images/card-wp-belsize.jpg",
+    alt: "Description for Image 6",
+    tags: ["Web Development", "WordPress"],
+    shortDesc: "A WordPress site for...",
+    desc: "This WordPress site was created...",
+  },
+  {
+    id: 9,
+    image: "/images/card-wp-belsize.jpg",
+    alt: "Description for Image 6",
+    tags: ["Web Development", "WordPress"],
+    shortDesc: "A WordPress site for...",
+    desc: "This WordPress site was created...",
+  },
 ];
 
 export default portfolioData;
