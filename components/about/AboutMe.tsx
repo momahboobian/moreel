@@ -1,15 +1,12 @@
 export default function AboutMe() {
   return (
     <div>
-      <p className=" mt-4 placeholder:leading-relaxed">
-        &ldquo;I believe in the power of technology to transform ideas into
-        reality and enhance user experiences.&ldquo;
-      </p>
-      <p className="mt-4">
-        I began my journey as a web developer in 2015, and since then, I&#39;ve
-        continued to grow and evolve as a developer. Every new challenge and
-        technology I encounter becomes a stepping stone for my evolution as a
-        developer.
+      <p className=" mt-4">
+        I believe in the power of technology to transform ideas into reality and
+        enhance user experiences. My journey as a web developer began in 2015,
+        and since then, I&#39;ve continued to grow and evolve as a developer.
+        Every new challenge and technology I encounter becomes a stepping stone
+        for my evolution as a developer.
       </p>
       <p className="mt-4">
         Specializing in web development has been an exhilarating ride.

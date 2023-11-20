@@ -27,19 +27,29 @@ const recommendationsData = [
     name: "Amy Mead",
     title: "Programme Manager",
   },
+  {
+    rating: 5,
+    review: "Valuable Collaborator with a Proactive Mindset",
+    recommendation:
+      "Mo is an attentive listener who ensures he understands the why of what he is working on. Proactive, he goes and brings up options and solutions with the team. Kind, clever and honest in his feedback, he is a great asset to any product team.",
+    avatar: "/images/rec-img/Karen_Fornos_Klein.jpeg",
+    name: "Karen Fornos Klein",
+    title: "Product expert",
+  },
+  {
+    rating: 5,
+    review: "A Trusted Partner in Creativity and Problem-Solving",
+    recommendation:
+      "Working with Mo since 2014, at his home, on location, and in the studio... accompanied by a shot of whisky at the end, has been an enjoyable experience. We enjoyed working together, and he's the only person whom I trust fully in terms of imagination, skills, and content judgment! We've also filmed on location, handling impossible live streams with call-ins and camera work, where he was a star in directing and problem-solving within seconds. Believe me, we faced many problems. Now, I take him everywhere I go, even by force. I can't imagine working closely with someone else. The only thing is, give him space to play and create in your stories.",
+    avatar: "/images/rec-img/Behzad_Bolour.jpeg",
+    name: "Behzad Bolour",
+    title: "Executive Producer & Presenter",
+  },
 ];
 
 export default recommendationsData;
 
 const rec2 = [
-  {
-    rating: 4,
-    review: "Review",
-    recommendation: "Great Quality!",
-    avatar: "/images/rec-img/Karen_Fornos_Klein.jpeg",
-    name: "Karen Fornos Klein",
-    title: "Product expert",
-  },
   {
     rating: 5,
     review: "Review",
@@ -55,13 +65,5 @@ const rec2 = [
     avatar: "/images/rec-img/Mahmoud_Mushatat.jpeg",
     name: "Mahmoud Mushatat",
     title: "Team Leader",
-  },
-  {
-    rating: 5,
-    review: "Review",
-    recommendation: "Great Quality!",
-    avatar: "/images/rec-img/Behzad_Bolour.jpeg",
-    name: "Behzad Bolour",
-    title: "Executive Producer & Presenter",
   },
 ];

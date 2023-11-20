@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import bannerImage from "@/public/images/MoReel.jpg";
 
@@ -5,13 +6,15 @@ export default function AboutSide() {
   return (
     <div className="items-start lg:sticky lg:top-0 lg:flex lg:max-h-screen  lg:flex-col lg:py-24">
       <div className="w-32 sm:w-48 h-32 sm:h-48 overflow-hidden rounded-md my-5">
-        <Image
-          src={bannerImage}
-          alt="Profile image"
-          width={500}
-          height={500}
-          priority={true}
-        />
+        <Link href="/">
+          <Image
+            src={bannerImage}
+            alt="Profile image"
+            width={500}
+            height={500}
+            priority={true}
+          />
+        </Link>
       </div>
       <h2 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
         Mo Mahboobian
