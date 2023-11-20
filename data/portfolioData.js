@@ -83,7 +83,7 @@ const portfolioData = [
     id: 9,
     image: "/images/card-purple-crystal.jpg",
     alt: "Purple Crystal",
-    tags: ["TV Program", "BBC"],
+    tags: ["TV Program", "Video Production", "BBC"],
     shortDesc: "Purple Crystal is weekly program from BBC Persian",
     desc: "Purple Crystal is weekly program from BBC Persian: A journey through the world of music and culture, featuring live performances, introductions to unknown faces, and encounters with artists of various styles.",
   },
