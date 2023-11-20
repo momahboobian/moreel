@@ -30,7 +30,7 @@ export default function Portfolio() {
       : portfolioData.filter((item) => item.tags.includes(selectedCategory));
 
   return (
-    <section className="mt-2 md:mt-10 text-white w-full">
+    <section className="mt-4 md:mt-10 text-white w-full">
       <div className="flex flex-col items-center justify-center p-4 xl:px-40">
         <h2 className="text-4xl font-semibold">Portfolio</h2>
         <p className="font-normal text-base text-center text-gray-500 p-4">
@@ -60,7 +60,7 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 overflow-y-auto max-h-[77vh]">
         {filteredPortfolioData.map((item) => (
           <PortfolioCard
             key={item.id}
