@@ -45,6 +45,14 @@ const recommendationsData = [
     name: "Behzad Bolour",
     title: "Executive Producer & Presenter",
   },
+  {
+    rating: 5,
+    review: "A Decade of Collaboration",
+    recommendation: "I have been working with Mahboobian for more than 10 years now. He is one of few highly skilled picture editor with wide knowledge in editing craft and platforms, and also he is expert in using most of graphics software. He is a hard working and very creative picture editor with a producer eye for details. He has edited, filmed and produced many long-form programs and content. It is a delight to work with a quite smart, creative artist like Mahboobian.",
+    avatar: "/images/rec-img/Mahmoud_Mushatat.jpg",
+    name: "Mahmoud Mushatat",
+    title: "Team Leader",
+  },
 ];
 
 export default recommendationsData;
@@ -58,12 +66,5 @@ const rec2 = [
     name: "Halden Beckwith",
     title: "Project Manager",
   },
-  {
-    rating: 5,
-    review: "Review",
-    recommendation: "Excellent Work!",
-    avatar: "/images/rec-img/Mahmoud_Mushatat.jpeg",
-    name: "Mahmoud Mushatat",
-    title: "Team Leader",
-  },
+
 ];
