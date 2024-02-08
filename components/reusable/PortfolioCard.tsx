@@ -27,23 +27,24 @@ export default function PortfolioCard({
             <Image src={image} alt={alt} width={500} height={500} priority={true} />
           </div>
        
-      <div className="flex justify-center items-center w-full relative">
-        <p className="absolute text-black bottom-48 left-2 space-x-2 opacity-0 group-hover:opacity-80 transition-opacity duration-1000">
-          {shortDesc}
-        </p>
-        {tags && tags.length > 0 && (
-          <div className="absolute flex flex-wrap items-center justify-center bottom-1 left-2 space-y-1 space-x-2 -ml-2">
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-2 py-1 bg-secondary-light text-black text-xs rounded-full  opacity-0 group-hover:opacity-80 transition-opacity duration-1000"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-      </div>
+        <div className="flex justify-center items-center w-full relative">
+          <p className="absolute text-black bottom-48 left-2 space-x-2 opacity-0 group-hover:opacity-80 transition-opacity duration-1000 p-10">
+            {shortDesc}
+          </p>
+          {tags && tags.length > 0 && (
+            <div className="absolute flex flex-wrap items-center justify-center bottom-1 left-2 space-y-1 space-x-2 -ml-2">
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-2 py-1 bg-gray-500 text-black text-xs rounded-full  opacity-0 group-hover:opacity-80 transition-opacity duration-1000"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+
       </Link>
       )}
     </div>
