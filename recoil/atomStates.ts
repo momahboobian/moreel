@@ -1,5 +1,18 @@
 import { atom, selector } from "recoil";
 
+export const selectedCategoryState = atom({
+  key: "selectedCategoryState",
+  default: "All Categories",
+});
+
+
+export const heroState = atom({
+  key: "heroState",
+  default: false,
+});
+
+
+
 const initialSkills = [
   "HTML",
   "CSS",

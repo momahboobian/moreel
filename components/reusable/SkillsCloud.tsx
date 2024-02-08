@@ -3,7 +3,7 @@ import { useRecoilValue } from "recoil";
 import {
   skillPropertiesSelector,
   shuffledSkillsSelector,
-} from "@/recoil/skillsState";
+} from "../../recoil/atomStates";
 
 interface SkillAnimationStyle {
   left: string;
