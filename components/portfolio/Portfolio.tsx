@@ -1,5 +1,5 @@
 import { useRecoilState } from "recoil";
-import { selectedCategoryState } from "@/recoil/categoriesState";
+import { selectedCategoryState } from "@/recoil/atomStates";
 import PortfolioCard from "@components/reusable/PortfolioCard";
 import portfolioData from "@data/portfolioData";
 

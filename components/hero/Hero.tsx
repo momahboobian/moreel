@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRecoilState } from "recoil";
-import { heroState } from "@/recoil/heroState";
+import { heroState } from "@/recoil/atomStates";
 import bannerImage from "@/public/images/gui-yellow.png";
 import CustomButton from "@components/reusable/CustomButton";
 
