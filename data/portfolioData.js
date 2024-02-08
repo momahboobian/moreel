@@ -72,7 +72,7 @@ const portfolioData = [
     tags: ["UI Design", "Front-End", "Back-End", "Next.js", "React"],
     deployedUrl: "https://vr-aws.moreel.me/",
     githubUrl: "https://github.com/momahboobian/Video-recommendation",
-    shortDesc: "An application can display and track the like and dislikes",
+    shortDesc: "An awesome video management application to organize and view your video collection That can track the like and dislikes",
     desc: "An immersive virtual reality app...",
   },
   {

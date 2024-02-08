@@ -68,6 +68,7 @@ export default function Portfolio() {
             alt={item.alt}
             shortDesc={item.shortDesc}
             tags={item.tags}
+            deployedUrl={item.deployedUrl}
           />
         ))}
       </div>
