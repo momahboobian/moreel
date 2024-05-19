@@ -9,6 +9,7 @@ const extraSkills = [
   "Collaborative Teamwork",
   "Interpersonal Abilities",
   "Content Creation",
+  "Time Management",
 ];
 
 export default extraSkills;
