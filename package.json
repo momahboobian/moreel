@@ -1,5 +1,6 @@
 {
   "name": "moreel-portfolio",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "next start",
@@ -8,23 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.17",
-    "@types/react-dom": "18.2.7",
-    "framer-motion": "^10.16.4",
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "^14.2.3",
     "react-icons": "^4.11.0",
-    "recoil": "^0.7.7",
-    "typescript": "5.1.6"
+    "framer-motion": "^10.16.4"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.6",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
-    "postcss": "8.4.27",
-    "tailwindcss": "^3.3.5"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
   }
 }
