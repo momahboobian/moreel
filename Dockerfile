@@ -1,4 +1,4 @@
-FROM node:20-slim AS base
+FROM node:18-alpine AS base
 
 FROM base AS builder
 
@@ -9,7 +9,7 @@ RUN npm ci
 COPY . .
 
 ENV NEXT_TELEMETORY_DISABLED=1
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 RUN npm run build
 
@@ -17,7 +17,7 @@ FROM base AS runner
 WORKDIR /app
 
 ENV NEXT_TELEMETORY_DISABLED=1
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
@@ -34,8 +34,8 @@ USER nextjs
 
 EXPOSE 3000
 
-ENV PORT 3000
+ENV PORT=3000
 
-ENV HOSTNAME "0.0.0.0"
+ENV HOSTNAME="0.0.0.0"
 
 CMD node server.js
