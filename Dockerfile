@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 FROM base AS builder
 
@@ -6,6 +6,8 @@ WORKDIR /app
 
 COPY package.json package-lock.json* ./
 RUN npm ci
+
+ENV NEXT_SHARP_PATH=/app/node_modules/sharp
 COPY . .
 
 ENV NEXT_TELEMETORY_DISABLED=1
@@ -35,7 +37,6 @@ USER nextjs
 EXPOSE 3000
 
 ENV PORT=3000
-
 ENV HOSTNAME="0.0.0.0"
 
-CMD node server.js
+CMD ["node", "server.js"]
