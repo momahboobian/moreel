@@ -34,6 +34,7 @@ export default function AboutMe() {
         scheduling, and real-time chat, always ensuring the perfect fit for
         their needs.
       </p>
+
       <p className="mt-4">
         I&#39;m an enthusiastic self-proclaimed designer deeply rooted in
         full-stack development. I revel in solving complex problems and crafting
