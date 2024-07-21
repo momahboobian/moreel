@@ -8,6 +8,7 @@ export default function AboutMe() {
         Every new challenge and technology I encounter becomes a stepping stone
         for my evolution as a developer.
       </p>
+
       <p className="mt-4">
         Specializing in web development has been an exhilarating ride.
         Constantly enriching my skills and eagerly embracing the latest industry
