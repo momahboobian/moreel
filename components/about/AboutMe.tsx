@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <div>
-      <p className=" mt-4">
+      <p className="mt-4 ">
         I believe in the power of technology to transform ideas into reality and
         enhance user experiences. My journey as a web developer began in 2015,
         and since then, I&#39;ve continued to grow and evolve as a developer.
@@ -47,14 +47,15 @@ export default function AboutMe() {
       <p className="mt-4">
         Lastly, a few tidbits about me. Oh, and if you&#39;d like to chat, drop
         me a line at info@moreel.me. I&#39;m always up for a good conversation!
+        I&#39;d love to hear from you!
       </p>
       {/* <div>
-        <h3 className="text-2xl font-semibold text-white mt-6 mb-3">
+        <h3 className="mt-6 mb-3 text-2xl font-semibold text-white">
           What I Do
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="text-gray-500 leading-relaxed">
-            <h4 className="text-xl font-semibold text-yellow-400 mb-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="leading-relaxed text-gray-500">
+            <h4 className="mb-2 text-xl font-semibold text-yellow-400">
               Web Development
             </h4>
             <p>
@@ -64,8 +65,8 @@ export default function AboutMe() {
               create fast, scalable, and user-friendly applications.
             </p>
           </div>
-          <div className="text-gray-500 leading-relaxed">
-            <h4 className="text-xl font-semibold text-yellow-400 mb-2">
+          <div className="leading-relaxed text-gray-500">
+            <h4 className="mb-2 text-xl font-semibold text-yellow-400">
               App Development
             </h4>
             <p>
@@ -75,8 +76,8 @@ export default function AboutMe() {
               reality and shape the future together.
             </p>
           </div>
-          <div className="text-gray-500 leading-relaxed">
-            <h4 className="text-xl font-semibold text-yellow-400 mb-2">
+          <div className="leading-relaxed text-gray-500">
+            <h4 className="mb-2 text-xl font-semibold text-yellow-400">
               Multimedia Development
             </h4>
             <p>
@@ -85,8 +86,8 @@ export default function AboutMe() {
               technology and visual storytelling.
             </p>
           </div>
-          <div className="text-gray-500 leading-relaxed">
-            <h4 className="text-xl font-semibold text-yellow-400 mb-2">
+          <div className="leading-relaxed text-gray-500">
+            <h4 className="mb-2 text-xl font-semibold text-yellow-400">
               UI/UX Designing
             </h4>
             <p>
