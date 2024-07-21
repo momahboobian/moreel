@@ -16,6 +16,7 @@ export default function AboutMe() {
         towards meaningful achievements. Im always thrilled to dive into
         innovative projects that create a positive impact.
       </p>
+
       <p className="mt-4">
         Im an impassioned, self-proclaimed designer deeply rooted in full-stack
         development. I enjoy tackling complex problems and crafting elegant
