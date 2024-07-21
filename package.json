@@ -2,7 +2,7 @@
   "name": "moreel-portfolio",
   "private": true,
   "scripts": {
-    "start": "next start",
+    "start": "next start -p 3003",
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint"
