@@ -25,6 +25,7 @@ export default function AboutMe() {
         hovering around to learning more about the new technologies or on indie
         hacker, or enjoying some free time.
       </p>
+
       <p className="mt-4">
         My experience spans from creating user-friendly web interfaces to
         optimizing backend systems. I thrive on challenges and am committed to
