@@ -1,8 +1,8 @@
 <!-- Intro  -->
 <h1 align="center">
-        <samp>&gt; Hi!, I am
-                <b>Mo Mahboobian</b>
-        </samp>
+<samp>&gt; Hi!, I am
+        <b>Mo Mahboobian</b>
+</samp>
 </h1>
 
 <h3 align="center"><a href="https://moreel.me">「  I am a Full-stack developer 」</a>
