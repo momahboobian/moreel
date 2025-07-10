@@ -1,5 +1,4 @@
-import { useRecoilState } from "recoil";
-import { selectedCategoryState } from "@/recoil/atomStates";
+import { useStore } from "@/store/store";
 import PortfolioCard from "@components/reusable/PortfolioCard";
 import portfolioData from "@data/portfolioData";
 
@@ -16,9 +15,7 @@ const categories: Category[] = [
 ];
 
 export default function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useRecoilState(
-    selectedCategoryState
-  );
+  const { selectedCategory, setSelectedCategory } = useStore();
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);

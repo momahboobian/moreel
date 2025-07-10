@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRecoilState } from "recoil";
-import { heroState } from "@/recoil/atomStates";
+import { useStore } from "@/store/store";
 import bannerImage from "@/public/images/gui-yellow.png";
 import CustomButton from "@components/reusable/CustomButton";
 
 export default function Hero() {
-  const [isModalOpen, setIsModalOpen] = useRecoilState(heroState);
+  const { isModalOpen, setIsModalOpen } = useStore();
 
   const handleButtonClick = () => {
     setIsModalOpen(true);

@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import { useRecoilValue } from "recoil";
-import {
-  skillPropertiesSelector,
-  shuffledSkillsSelector,
-} from "../../recoil/atomStates";
+import { useStore } from "../../store/store";
 
 interface SkillAnimationStyle {
   left: string;
@@ -13,27 +9,38 @@ interface SkillAnimationStyle {
 }
 
 export default function Skills() {
-  const animatedSkills = useRecoilValue(shuffledSkillsSelector);
-  const skillProperties = useRecoilValue(skillPropertiesSelector);
+  const {
+    shuffledSkills,
+    skillProperties,
+    shuffleSkills,
+    generateSkillProperties,
+  } = useStore();
 
   const [animationStyles, setAnimationStyles] = useState<SkillAnimationStyle[]>(
     []
   );
 
   useEffect(() => {
-    const styles = animatedSkills.map((skill, index) => ({
-      left: skillProperties[index].left,
-      top: skillProperties[index].top,
-      animation: `move-skill ${skillProperties[index].animationDuration}s linear infinite`,
-      animationDelay: `${index * 0.7}s`,
-    }));
+    shuffleSkills();
+    generateSkillProperties();
+  }, [shuffleSkills, generateSkillProperties]);
 
-    setAnimationStyles(styles);
-  }, [animatedSkills, skillProperties]);
+  useEffect(() => {
+    if (shuffledSkills.length > 0 && skillProperties.length > 0) {
+      const styles = shuffledSkills.map((skill, index) => ({
+        left: skillProperties[index].left,
+        top: skillProperties[index].top,
+        animation: `move-skill ${skillProperties[index].animationDuration}s linear infinite`,
+        animationDelay: `${index * 0.7}s`,
+      }));
+
+      setAnimationStyles(styles);
+    }
+  }, [shuffledSkills, skillProperties]);
 
   return (
     <div className="skills-container">
-      {animatedSkills.map((skill, index) => (
+      {shuffledSkills.map((skill, index) => (
         <p
           key={index}
           className="skill font-normal text-gray-500"

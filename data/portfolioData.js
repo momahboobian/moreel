@@ -5,7 +5,7 @@ const portfolioData = [
     alt: "Song-Sieve",
     tags: [
       "Spotify",
-      "Recoil",
+      "Zustand",
       "Firebase",
       "Front-End",
       "Back-End",
